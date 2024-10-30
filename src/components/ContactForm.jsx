@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Card from "./Card";
+import Canda from "../assets/flags/Canda.webp";
+import UAE from "../assets/flags/UAE.png";
+import USA from "../assets/flags/USA.webp";
+import India from "../assets/flags/India.svg.webp";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +14,40 @@ const ContactForm = () => {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const cardData = [
+    {
+      city: "US",
+      address: "4010 Sorrento Valley Blvd, Suite 400, San Diego, CA 92121, USA",
+      phone: "+1 (209) 215-5952",
+      email: "hello@dnagrowth.com",
+      flag: USA, // Add flag image
+    },
+    {
+      city: "Canada",
+      address:
+        "99 Wyse Road, Suite 1100, Dartmouth, Nova Scotia, Canada, B3A 4S5",
+      phone: "+1(902) 456.6473",
+      email: "mmuise@muisemergersacquisitions.com",
+      flag: Canda, // Add flag image
+    },
+    {
+      city: "UAE",
+      address:
+        "DNA Growth FZE LLC, A-29-01-04-04 - Flamingo Villas, Ajman, UAE",
+      phone: "+971 56149 8070",
+      email: "hello@dnagrowth.com",
+      flag: UAE, // Add flag image
+    },
+    {
+      city: "India",
+      address:
+        "Skytech Towers, Plot no - D-176, Phase -8-B, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 160055, India",
+      phone: "+91 78143 19618",
+      email: "hello@dnagrowth.com",
+      flag: India, // Add flag image
+    },
+  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,14 +73,27 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full bg-slate-400 h-full justify-around items-center ">
+    <div className="flex flex-col w-full bg-slate-200 justify-around items-center pb-6 ">
       <div>
-        <h1 className="text-4xl font-bold font-roboto-slab text-black p-6 border-b-2 border-slate-200 rounded-3xl ">
+        <h1 className="text-4xl font-bold font-roboto-slab text-black p-6 ">
           Grow Your Business Today
         </h1>
       </div>
-      <div className="flex justify-around w-full  items-center ">
-        <div className="w-full md:w-2/6 bg-white px-6 py-6 border-2 border-gray-700 rounded-lg">
+      <div className="flex flex-wrap justify-around w-full items-center">
+        <div className="w-full lg:w-7/12 flex flex-wrap justify-center">
+          {cardData.map((card, index) => (
+            <div key={index} className="p-2 w-full sm:w-1/2">
+              <Card
+                city={card.city}
+                address={card.address}
+                phone={card.phone}
+                email={card.email}
+                flag={card.flag} // Pass flag prop
+              />
+            </div>
+          ))}
+        </div>
+        <div className="w-full lg:w-4/12 bg-white px-6 py-4  m-2 border-2 border-black rounded-lg ">
           <h1 className="text-2xl font-bold py-4 font-roboto-slab">
             Get In Touch
           </h1>
@@ -120,47 +171,6 @@ const ContactForm = () => {
             </button>
           </form>
         </div>
-        <div className="w-1/2">
-          <img
-            src="src/assets/contactUs.png" // Adjust the path if needed
-            alt="Contact Us"
-            className="object-cover w-full h-auto" // Ensure the image scales properly
-          />
-        </div>
-      </div>
-      <div className="w-full flex justify-around pb-8  ">
-        <Card
-        city={'Us'}
-          address={
-            "4010 Sorrento Valley Blvd, Suite 400, San Diego, CA 92121, USA"
-          }
-          phone={"+1 (209) 215-5952"}
-          email={"hello@dnagrowth.com"}
-        />
-        <Card
-        city={'Canada'}
-          address={
-            "99 Wyse Road, Suite 1100, Dartmouth, Nova Scotia, Canada, B3A 4S5"
-          }
-          phone={"+1(902) 456.6473"}
-          email={"mmuise@muisemergersacquisitions.com"}
-        />
-        <Card
-        city={'UAE'}
-          address={
-            "DNA Growth FZE LLC, A-29-01-04-04 - Flamingo Villas, Ajman, UAE"
-          }
-          phone={"+971 56149 8070"}
-          email={"hello@dnagrowth.com"}
-        />
-        <Card
-        city={'India'}
-          address={
-            "Skytech Towers, Plot no - D-176, Phase -8-B, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 160055 , India "
-          }
-          phone={"+91 78143 19618"}
-          email={"hello@dnagrowth.com"}
-        />
       </div>
     </div>
   );

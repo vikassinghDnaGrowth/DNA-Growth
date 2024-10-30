@@ -33,12 +33,14 @@ const Services = () => {
   return (
     <div className="bg-customBlue text-white w-full   py-10">
       <div className=" ml-32  pb-12">
-        <h1 className="font-roboto-slab  text-5xl pb-4">Let's Help You</h1>
+        <h1 className="font-roboto-slab  text-5xl pb-4">
+          Let's Help You
+        </h1>
         <span className="font-roboto-slab  text-5xl ">
           Focus On Your Mission
         </span>
       </div>
-    
+
       {data.map((item, index) => (
         <div
           key={index}
@@ -55,8 +57,10 @@ const Services = () => {
           </div>
         </div>
       ))}
-      <button className="border-2 bg-customBlue w-48
-       py-2  text-white text-xl rounded-3xl translate-x-[40%]">
+      <button
+        className="border-2 bg-customBlue w-48
+       py-2  text-white text-xl rounded-3xl translate-x-[40%]"
+      >
         Contact
       </button>
     </div>
