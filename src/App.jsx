@@ -10,7 +10,7 @@ import Help from "./section/Help";
 import LandingPage from "./section/LandingPage";
 import Card from "./section/Card";
 import Team from "./section/Team";
-
+import Stepper from "./section/Stepper";
 // import ImageScroll from "./section/ImageScroll";
 
 const App = () => {
@@ -18,8 +18,8 @@ const App = () => {
     <>
       <Navbar />
       <LandingPage />
-      <Services />
-
+      <Stepper />
+      {/* <Services /> */}
       <Header />
       <ContactForm />
       <Carousel />

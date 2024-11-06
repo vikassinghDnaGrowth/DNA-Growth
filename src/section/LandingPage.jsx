@@ -8,20 +8,18 @@ const LandingPage = () => {
         <div className="w-9/12 flex gap-4 flex-col items-center justify-center h-full">
           <div className="w-8/12">
             <header>
-              <h1 className="text-4xl font-semibold font-roboto-slab leading-tight">
+              <h1 className="text-4xl font-semibold font-roboto-slab leading-tight pb-4">
                 Supercharge Your CFO Practice by 2x with White-Label Finance &
                 Accounting Solutions
               </h1>
             </header>
             <div>
               <p className="py-2 text-lg font-montserrat">
-                Feeling like you're drowning in financial reports and
-                spreadsheets? What if you could offload all the busy (but
-                important) work like accounting & bookkeeping, modeling, and
-                day-to-day operations without hiring a massive team? At DNA
-                Growth, we help fractional CFOs just like you scale their
-                business faster by doing the behind-the-scenes work that drives
-                client satisfaction—and we do it under your brand.
+                Drowning in financial reports and spreadsheets? Imagine
+                offloading accounting, bookkeeping, modeling, and daily
+                operations without a big team. DNA Growth helps fractional CFOs
+                scale faster by handling the behind-the-scenes work that boosts
+                client satisfaction—all under your brand.
               </p>
             </div>
             <span className="text-blue-900">SPEED. SCALE. SUCCESS.</span>
