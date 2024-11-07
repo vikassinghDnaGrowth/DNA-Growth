@@ -22,6 +22,7 @@ const ContactForm = () => {
       phone: "+1 (209) 215-5952",
       email: "hello@dnagrowth.com",
       flag: USA, // Add flag image
+      bgColor: "#C6E7FF",
     },
     {
       city: "Canada",
@@ -30,6 +31,7 @@ const ContactForm = () => {
       phone: "+1(902) 456.6473",
       email: "mmuise@muisemergersacquisitions.com",
       flag: Canda, // Add flag image
+      bgColor: "#C6E7FF",
     },
     {
       city: "UAE",
@@ -38,6 +40,7 @@ const ContactForm = () => {
       phone: "+971 56149 8070",
       email: "hello@dnagrowth.com",
       flag: UAE, // Add flag image
+      bgColor: "#D4F6FF",
     },
     {
       city: "India",
@@ -46,6 +49,7 @@ const ContactForm = () => {
       phone: "+91 78143 19618",
       email: "hello@dnagrowth.com",
       flag: India, // Add flag image
+      bgColor: "#D4F6FF",
     },
   ];
 
@@ -73,7 +77,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full bg-slate-200 justify-around items-center pb-6 ">
+    <div className="flex flex-col w-full  bg-slate-200 justify-around items-center pb-6 ">
       <div>
         <h1 className="text-4xl font-bold font-roboto-slab text-black p-6 ">
           Grow Your Business Today
@@ -89,6 +93,7 @@ const ContactForm = () => {
                 phone={card.phone}
                 email={card.email}
                 flag={card.flag} // Pass flag prop
+              bgColor={card.bgColor}
               />
             </div>
           ))}
