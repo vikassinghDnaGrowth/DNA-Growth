@@ -103,7 +103,7 @@ const Stepper = () => {
       </div>
 
       {/* Optional Contact Button */}
-      <button className="border-2 ml-2 bg-customBlue md:w-48 w-5/12 py-2 text-white md:text-xl text-md rounded-3xl md:transform md:-translate-x-[45%] ">
+      <button className="border-2 ml-2 bg-customBlue md:w-48 w-5/12 py-2 text-white md:text-xl text-md rounded-3xl md:transform md:-translate-x-[55%] ">
         Contact
       </button>
     </div>
