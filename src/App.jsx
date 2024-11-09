@@ -22,7 +22,7 @@ const App = () => {
       <LandingPage />
       <Stepper />
       <Header />
-      <Services />
+      {/* <Services /> */}
       <ContactForm />
       <Carousel />
       <CFO />

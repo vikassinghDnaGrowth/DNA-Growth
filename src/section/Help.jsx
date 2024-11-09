@@ -34,7 +34,12 @@ const dummyData = [
 
 const Help = () => {
   return (
-    <div className="w-full flex justify-center items-center py-6 ">
+    <div className="w-full flex flex-col justify-center items-center py-6">
+      <h1 className="text-3xl font-bold text-customBlue mb-8 text-center">
+        How We’ve Helped Fractional CFOs Across Industrial & Geographical
+        Boundaries Succeed ?
+      </h1>
+
       <Carousel
         showIndicators={false}
         showArrows={true}
@@ -43,14 +48,14 @@ const Help = () => {
         infiniteLoop={true}
         autoPlay={true}
         interval={3000}
-        className="w-full "
+        className="w-full"
         centerMode
         centerSlidePercentage={33.33}
       >
         {dummyData.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-lg p-6 m-4 bg-green-300 transition-transform duration-300 ease-in-out transform hover:scale-110 "
+            className="flex flex-col items-center rounded-lg p-6 m-4 bg-green-300 transition-transform duration-300 ease-in-out transform hover:scale-110"
           >
             <div className="w-full mb-4">
               <img
@@ -59,9 +64,9 @@ const Help = () => {
                 className="w-full h-64 object-cover rounded-md"
               />
             </div>
-            <h1 className="text-2xl font-bold text-customBlue mb-2 text-center">
+            <h2 className="text-2xl font-bold text-customBlue mb-2 text-center">
               {item.title}
-            </h1>
+            </h2>
             <p className="text-base text-black text-center">
               {item.description}
             </p>

@@ -1,11 +1,11 @@
 import React from "react";
-import contactUs from "../assets/contactUs.png";
+import contactUs from "../assets/unnamed.jpg";
 
 const LandingPage = () => {
   return (
     <div className="w-full bg-[#3c005a] h-screen">
       <div className="w-full flex h-full gap-4">
-        <div className="w-9/12 flex gap-4 flex-col items-center justify-center h-full">
+        <div className="w-9/12 flex gap-4 flex-col items-center justify-center h-full ">
           <div className="w-8/12">
             <header>
               <span className=" text-white text-2xl font-roboto-slab italic ">
@@ -26,16 +26,16 @@ const LandingPage = () => {
               </p>
             </div>
 
-            <button className="border-2 bg-[rgb(207,77,113)]  rounded-xl block px-[8px] py-[6px] mt-4 shadow-xl text-white text-md font-semibold">
+            <button className="border-2 bg-[rgb(207,77,113)]  rounded-xl block px-[8px] py-[6px] mt-4  text-white text-md font-semibold">
               Let’s Level Up Your Practice
             </button>
           </div>
         </div>
-        <div className="w-5/12 h-full flex items-center justify-center p-4 ">
+        <div className="w-4/12 h-full flex items-center justify-center p-4  ">
           <img
             src={contactUs}
             alt="Contact Us"
-            className="max-w-full h-auto border-2 bg-wh border-white rounded-full  "
+            className=" h-[77%] border-2 object-cover  border-white rounded-full  p-6 shadow-2xl  "
           />
         </div>
       </div>
