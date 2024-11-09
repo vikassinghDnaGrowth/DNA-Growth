@@ -22,7 +22,7 @@ const ContactForm = () => {
       phone: "+1 (209) 215-5952",
       email: "hello@dnagrowth.com",
       flag: USA, // Add flag image
-      bgColor: "#C6E7FF",
+      bgColor: "#ffffff",
     },
     {
       city: "Canada",
@@ -31,7 +31,7 @@ const ContactForm = () => {
       phone: "+1(902) 456.6473",
       email: "mmuise@muisemergersacquisitions.com",
       flag: Canda, // Add flag image
-      bgColor: "#C6E7FF",
+      bgColor: "#ffffff",
     },
     {
       city: "UAE",
@@ -40,7 +40,7 @@ const ContactForm = () => {
       phone: "+971 56149 8070",
       email: "hello@dnagrowth.com",
       flag: UAE, // Add flag image
-      bgColor: "#D4F6FF",
+      bgColor: "#ffffff",
     },
     {
       city: "India",
@@ -49,7 +49,7 @@ const ContactForm = () => {
       phone: "+91 78143 19618",
       email: "hello@dnagrowth.com",
       flag: India, // Add flag image
-      bgColor: "#D4F6FF",
+      bgColor: "#FFFFFF",
     },
   ];
 
@@ -77,14 +77,14 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full  bg-slate-200 justify-around items-center pb-6 ">
-      <div>
-        <h1 className="text-4xl font-bold font-roboto-slab text-black p-6 ">
+    <div className="flex flex-col w-full  bg-[#226ba7] justify-around  pb-6  ">
+      <div className="">
+        <h1 className="text-2xl md:text-5xl font-bold font-roboto-slab text-white p-6 uppercase ml-2  ">
           Grow Your Business Today
         </h1>
       </div>
-      <div className="flex flex-wrap justify-around w-full items-center">
-        <div className="w-full lg:w-7/12 flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-around w-full items-center ">
+        <div className="w-full lg:w-7/12 flex flex-wrap justify-center ">
           {cardData.map((card, index) => (
             <div key={index} className="p-2 w-full sm:w-1/2">
               <Card
@@ -93,23 +93,23 @@ const ContactForm = () => {
                 phone={card.phone}
                 email={card.email}
                 flag={card.flag} // Pass flag prop
-              bgColor={card.bgColor}
+                bgColor={card.bgColor}
               />
             </div>
           ))}
         </div>
-        <div className="w-full lg:w-4/12 bg-white px-6 py-4  m-2 border-2 border-black rounded-lg ">
-          <h1 className="text-2xl font-bold py-4 font-roboto-slab">
+        <div className="w-full lg:w-4/12  px-6 py-4  m-2  rounded-lg ">
+          <h1 className="text-4xl text-white font-bold py-4 font-roboto-slab">
             Get In Touch
           </h1>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="shadow-lg shadow-gray-700 p-8 rounded-lg">
             {error && (
               <p className="text-red-600" aria-live="polite">
                 {error}
               </p>
             )}
             <div className="mb-6">
-              <label className="block text-gray-700" htmlFor="name">
+              <label className="block  text-white" htmlFor="name">
                 Name
               </label>
               <input
@@ -124,7 +124,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700" htmlFor="email">
+              <label className="block text-white" htmlFor="email">
                 Email
               </label>
               <input
@@ -139,7 +139,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700" htmlFor="contactNumber">
+              <label className="block text-white" htmlFor="contactNumber">
                 Contact Number
               </label>
               <input
@@ -154,7 +154,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700" htmlFor="message">
+              <label className="block text-white" htmlFor="message">
                 Message
               </label>
               <textarea
@@ -169,7 +169,7 @@ const ContactForm = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-200"
+              className="relative left-24 w-1/2 bg-white text-black text-xl  p-2 rounded-xl  hover:bg-blue-600 transition duration-200"
               disabled={loading}
             >
               {loading ? "Submitting..." : "Submit"}

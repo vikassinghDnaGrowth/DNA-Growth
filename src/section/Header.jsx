@@ -2,8 +2,9 @@ import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all"; // Ensure ScrollTrigger is imported here
 import { useGSAP } from "@gsap/react";
-import { FcCheckmark } from "react-icons/fc";
+import { GiCheckMark } from "react-icons/gi";
 
+import image from "../assets/image.png";
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,7 +30,7 @@ const Header = () => {
       opacity: 0,
       x: -30, // Start with horizontal offset
       duration: 1,
-      ease: "power1.inOut",
+      ease: "sine.in",
       stagger: 0.5, // Stagger the animation for each <h1> element
       delay: 0.3, // Delay the h1 animation to start after the span animation
       scrollTrigger: {
@@ -78,29 +79,28 @@ const Header = () => {
 
   return (
     <div className="w-full h-screen flex justify-center items-center p-4 bg-customBlue">
-      <div className="w-10/12 flex justify-between gap-16">
-        <div className="flex flex-col justify-center p-4 w-8/12">
-          <div className="flex flex-col font-montserrat font-bold text-white text-3xl capitalize gap-4 ">
-            <div className="flex gap-2">
-              <span className="checkmark text-4xl font-bold">
-                <FcCheckmark />
+      <div className="w-10/12 flex justify-between gap-4">
+        <div className="flex flex-col justify-center p-4 w-7/12  ">
+          <div className="flex flex-col relative right-20 font-montserrat font-bold text-white text-3xl capitalize gap-4  text-nowrap">
+            <div className="flex gap-6 ">
+              <span className="checkmark text-5xl font-bold text-green-600">
+                <GiCheckMark />
               </span>
               <h1 className="h1">Double your clientele</h1>
             </div>
-            <div className="flex gap-2">
-              <span className="checkmark text-4xl font-bold">
-                <FcCheckmark />
+            <div className="flex gap-6">
+              <span className="checkmark text-5xl font-bold  text-green-600">
+                <GiCheckMark />
               </span>
               <h1 className="h1">Deliver more value to your clients</h1>
             </div>
-            <div className="flex gap-2">
-              <span className="checkmark text-4xl font-bold">
-                <FcCheckmark />
+            <div className="flex gap-6">
+              <span className="checkmark text-5xl font-bold  text-green-600">
+                <GiCheckMark />
               </span>
               <h1 className="h1">Free up your time for strategic work</h1>
             </div>
           </div>
-
           <p className="py-8 text-md text-white discription">
             <span className="pr-2 text-green-400 font-medium">DNA Growth</span>
             is a leader in Accounting, Finance, and Automation Solutions for the
@@ -108,17 +108,20 @@ const Header = () => {
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-
-          <button className="w-1/2 mt-2 p-2 bg-white text-black border-2 border-black rounded font-semibold">
+          <button className="w-1/2 rounded-xl mt-2 p-2 bg-white text-black border-2 border-black text-md font-semibold">
             Explore Our Services
           </button>
+          {/* rounded-xl block px-[8px] py-[6px] mt-4 text-white text-md
+          font-semibold */}
         </div>
-        <div className="flex justify-center items-center rounded-3xl bg-white p-4 ">
-          <img
-            src="src/assets/Hero-Wrapper__image.png"
-            alt="HeaderImg"
-            className="image w-[97%] h-[97%] shadow-2xl shadow-black object-cover bg-gradient-to-t from-[#5ee7df] to-[#b490ca] rounded-3xl"
-          />
+        <div className="flex w-full justify-center items-center ">
+          <div className="flex w-full justify-center items-center rounded-3xl bg-gray-300 p-4  ">
+            <img
+              src={image}
+              alt="HeaderImg"
+              className=" image w-full h-auto  shadow-2xl shadow-black object-cover rounded-3xl  "
+            />
+          </div>
         </div>
       </div>
     </div>

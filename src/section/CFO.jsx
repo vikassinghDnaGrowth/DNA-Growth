@@ -99,7 +99,7 @@ const CFO = () => {
                 Accounting and Controller
               </h1>
             </div>
-            <ul className="list-none">
+            <ul className="list-none ">
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />

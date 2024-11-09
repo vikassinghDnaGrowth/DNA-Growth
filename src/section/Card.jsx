@@ -4,7 +4,7 @@ import bgImage from "../assets/flags/image.jpg";
 const Card = () => {
   return (
     <div
-      className="w-full flex flex-col gap-8 items-center justify-center pb-[10vh]"
+      className="w-full flex flex-col gap-8 items-center justify-center pb-[10vh] "
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
