@@ -3,21 +3,25 @@ import { FcApproval } from "react-icons/fc";
 
 const CFO = () => {
   return (
-    <div className="w-full flex justify-center bg-gray-100 ">
-      <div className="w-9/12 py-6 ">
+    <div className="w-full flex justify-center bg-gray-100">
+      <div className="w-full max-w-7xl py-6 px-4">
+        {/* Heading Section */}
         <div className="flex justify-center items-center pb-6">
-          <h1 className="text-4xl font-roboto-slab">
+          <h1 className="text-4xl sm:text-5xl font-roboto-slab text-center">
             We Bring Everything to Your CFO Office
           </h1>
         </div>
-        <div className="w-full flex justify-center gap-6 ">
-          <div className="w-1/2 flex flex-col border-2 border-gra00 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white ">
+
+        {/* Card Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Strategic CFO Support Card */}
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
             <div className="flex justify-center">
-              <h4 className="text-2xl font-roboto-slab pb-6">
+              <h4 className="text-2xl sm:text-3xl font-roboto-slab pb-6">
                 Strategic CFO Support
               </h4>
             </div>
-            <ul className="list-none">
+            <ul className="list-none space-y-4">
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />
@@ -51,13 +55,15 @@ const CFO = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/2 flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
+
+          {/* CFO Tech and Automation Card */}
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
             <div className="flex justify-center">
-              <h1 className="text-2xl font-roboto-slab pb-6">
+              <h1 className="text-2xl sm:text-3xl font-roboto-slab pb-6">
                 CFO Tech and Automation
               </h1>
             </div>
-            <ul className="list-none">
+            <ul className="list-none space-y-4">
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />
@@ -93,13 +99,15 @@ const CFO = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/2 flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
+
+          {/* Accounting and Controller Card */}
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
             <div className="flex justify-center">
-              <h1 className="text-2xl font-roboto-slab pb-6">
+              <h1 className="text-2xl sm:text-3xl font-roboto-slab pb-6">
                 Accounting and Controller
               </h1>
             </div>
-            <ul className="list-none ">
+            <ul className="list-none space-y-4">
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />

@@ -78,13 +78,11 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col w-full  bg-[#226ba7] justify-around  pb-6  ">
-      <div className="">
-        <h1 className="text-2xl md:text-5xl font-bold font-roboto-slab text-white p-6 uppercase ml-2  ">
-          Grow Your Business Today
-        </h1>
-      </div>
       <div className="flex flex-wrap justify-around w-full items-center ">
         <div className="w-full lg:w-7/12 flex flex-wrap justify-center ">
+          <h1 className="text-2xl md:text-5xl font-bold font-roboto-slab text-white p-6 uppercase ml-2  ">
+            Grow Your Business Today
+          </h1>
           {cardData.map((card, index) => (
             <div key={index} className="p-2 w-full sm:w-1/2">
               <Card
@@ -99,10 +97,13 @@ const ContactForm = () => {
           ))}
         </div>
         <div className="w-full lg:w-4/12  px-6 py-4  m-2  rounded-lg ">
-          <h1 className="text-4xl text-white font-bold py-4 font-roboto-slab">
+          <h1 className="text-2xl md:text-5xl text-center text-white font-bold py-4 font-roboto-slab  uppercase">
             Get In Touch
           </h1>
-          <form onSubmit={handleSubmit} className="shadow-lg shadow-gray-700 p-8 rounded-lg">
+          <form
+            onSubmit={handleSubmit}
+            className="shadow-lg shadow-gray-700 p-8 rounded-lg"
+          >
             {error && (
               <p className="text-red-600" aria-live="polite">
                 {error}
@@ -167,13 +168,15 @@ const ContactForm = () => {
                 required
               />
             </div>
-            <button
-              type="submit"
-              className="relative left-24 w-1/2 bg-white text-black text-xl  p-2 rounded-xl  hover:bg-blue-600 transition duration-200"
-              disabled={loading}
-            >
-              {loading ? "Submitting..." : "Submit"}
-            </button>
+            <div className="flex justify-center items-center">
+              <button
+                type="submit"
+                className=" bg-white text-black text-lg  py-2 px-12 rounded-xl  hover:bg-blue-600 transition duration-200"
+                disabled={loading}
+              >
+                {loading ? "Submitting..." : "Submit"}
+              </button>
+            </div>
           </form>
         </div>
       </div>

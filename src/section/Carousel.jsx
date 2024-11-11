@@ -44,7 +44,9 @@ const Carousels = () => {
   return (
     <>
       <div className="text-3xl font-bold text-white flex justify-center bg-black py-4">
-        <h1 className="  font-roboto-slab">Why Fractional CFOs Love Working with Us</h1>
+        <h1 className="font-roboto-slab text-center px-4 sm:text-4xl md:text-5xl lg:text-6xl">
+          Why Fractional CFOs Love Working with Us
+        </h1>
       </div>
       <Carousel
         className="w-full bg-black p-4"
@@ -59,15 +61,18 @@ const Carousels = () => {
         interval={5000} // Set interval for autoplay
       >
         {data.map((item, index) => (
-          <div key={index} className="w-full flex justify-center min-h-[25vh]">
+          <div
+            key={index}
+            className="w-full flex justify-center min-h-[25vh] px-4"
+          >
             <div className="flex flex-col w-full max-w-lg px-4">
               <h1
-                className={`text-2xl font-bold ${item.titleColor} text-center`}
+                className={`text-2xl font-bold ${item.titleColor} text-center sm:text-3xl md:text-4xl`}
               >
                 {item.title}
               </h1>
               <p
-                className={`mt-2 text-lg text-${item.descriptionColor} text-center`}
+                className={`mt-2 text-lg text-${item.descriptionColor} text-center sm:text-xl md:text-2xl`}
               >
                 {item.description}
               </p>

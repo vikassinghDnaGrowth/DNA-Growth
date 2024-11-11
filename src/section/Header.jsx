@@ -78,30 +78,30 @@ const Header = () => {
   });
 
   return (
-    <div className="w-full h-screen flex justify-center items-center p-4 bg-customBlue">
-      <div className="w-10/12 flex justify-between gap-4">
-        <div className="flex flex-col justify-center p-4 w-7/12  ">
-          <div className="flex flex-col relative right-20 font-montserrat font-bold text-white text-3xl capitalize gap-4  text-nowrap">
-            <div className="flex gap-6 ">
-              <span className="checkmark text-5xl font-bold text-green-600">
+    <div className="w-full md:h-screen flex justify-center items-center p-4 bg-customBlue">
+      <div className="w-full md:w-10/12 flex md:flex-row flex-col  justify-between gap-4">
+        <div className="flex flex-col justify-center p-4 md:w-7/12  w-full">
+          <div className="flex flex-col md:relative right-20 font-montserrat text-2xl md:3xl font-bold text-white  capitalize gap-4  md:text-nowrap ">
+            <div className="flex gap-6">
+              <span className="checkmark md:text-5xl font-bold text-green-600">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Double your clientele</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark text-5xl font-bold  text-green-600">
+              <span className="checkmark md:text-5xl font-bold  text-green-600">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Deliver more value to your clients</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark text-5xl font-bold  text-green-600">
+              <span className="checkmark md:text-5xl font-bold  text-green-600">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Free up your time for strategic work</h1>
             </div>
           </div>
-          <p className="py-8 text-md text-white discription">
+          <p className="py-8 text-xl md:text-md text-white discription">
             <span className="pr-2 text-green-400 font-medium">DNA Growth</span>
             is a leader in Accounting, Finance, and Automation Solutions for the
             CFO Office. We offer tailored solutions to passionate fractional
