@@ -66,13 +66,13 @@ const WhyUs = () => {
         </div>
 
         {/* Center Card */}
-        <div className="border-2 border-gray-200 shadow-xl rounded-lg p-4 h-full flex flex-col items-center justify-center">
+        <div className="border-2 border-gray-200 shadow-xl rounded-lg p-4 h-full flex flex-col justify-center">
           <img
             src={Data[2].image}
             alt={Data[2].title}
             className="h-64 w-full object-cover mb-4"
           />
-          <h4 className="text-lg font-semibold">{Data[2].title}</h4>
+          <h4 className="text-lg font-semibold " >{Data[2].title}</h4>
           <p className="text-gray-600">{Data[2].description}</p>
         </div>
 
@@ -88,7 +88,7 @@ const WhyUs = () => {
                 alt={item.title}
                 className="h-40 w-full object-cover mb-4"
               />
-              <h4 className="text-lg font-semibold">{item.title}</h4>
+              <h4 className="text-lg font-semibold ">{item.title}</h4>
               <p className="text-gray-600">{item.description}</p>
             </div>
           ))}

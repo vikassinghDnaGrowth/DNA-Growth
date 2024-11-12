@@ -46,16 +46,14 @@ const Stepper = () => {
           scrollTrigger: {
             trigger: step,
             start: "top 70%",
-           
+
             toggleActions: "play none none reverse",
           },
-          duration:2,
+          duration: 2,
           ease: "sine.in",
         }
       );
     });
-
-   
   }, [data]);
 
   // Setup ScrollTrigger when component is mounted
@@ -73,39 +71,46 @@ const Stepper = () => {
       className="bg-[#D9E4F5]  text-white w-full md:py-10 md:px-24  py-8 px-6 "
       ref={containerRef}
     >
-      <div className="md:-ml-10 pb-12 px-5 ">
-        <h1 className="font-roboto-slab text-2xl sm:text-3xl md:text-5xl md:pb-4 pb-2  text-customBlue font-semibold text-nowrap">Let's Help You</h1>
-        <h1 className="font-roboto-slab text-2xl sm:text-3xl md:text-5xl text-customBlue font-semibold text-nowrap">Focus On Your Mission</h1>
+      <div className="md:-ml-10 pb-12 md:pl-0 sm:pl-12 pl-4">
+        <h1 className="font-roboto-slab text-2xl sm:text-3xl md:text-5xl md:pb-4 pb-2  text-customBlue font-semibold ">
+          Let's Help You
+        </h1>
+        <h1 className="font-roboto-slab text-2xl  sm:text-3xl md:text-5xl text-customBlue font-semibold ">
+          Focus On Your Mission
+        </h1>
       </div>
-
       {/* vikas element with border (it needs to be visible for ScrollTrigger to affect it) */}
-      <div className=" flex ">
-        <div className="border-l-2 border-gray-300 "></div>
-        <div className="w-full  md:9/12 flex flex-col md:pl-10 pl-6 md:transform md:-translate-x-[7.1%] transform -translate-x-[3.9%] lg:-translate-x-[3.8%]">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className={`border-l-2 md:pb-8 border-customBlue  flex service-item service-item-${index}`}
-            >
-              {/* Circle with the step number */}
-              <div className="flex items-center justify-center w-10 h-10 p-4 border-2 border-white text-white bg-blue-950 rounded-full transform -translate-x-[55%]">
-                {index + 1}
-              </div>
+      <div className=" flex sm:pl-14 md:pl-0  pl-6">
+        <div className="w-full border-l-2 border-gray-300  ">
+          <div className="w-full  md:9/12 flex flex-col transform -translate-x-[0.3%] ">
+           
+            {data.map((item, index) => (
+              <div
+                key={index}
+                className={`border-l-2 md:pb-8 border-customBlue  flex service-item service-item-${index}`}
+              >
+                {/* Circle with the step number */}
+                <div className="flex items-center justify-center w-10 h-10 p-4 border-2 border-white text-white bg-blue-950 rounded-full  transform -translate-x-[55%]">
+                  {index + 1}
+                </div>
 
-              {/* Step content */}
-              <div className="md:ml-6    md:p-2 pb-6">
-                <p className="text-customBlue text-lg md:text-2xl font-semibold">{item.title}</p>
-                <p className="text-sm text-black ">{item.description}</p>
+                {/* Step content */}
+                <div className="md:ml-6    md:p-2 pb-6">
+                  <p className="text-customBlue text-lg md:text-2xl font-semibold">
+                    {item.title}
+                  </p>
+                  <p className="text-sm text-black ">{item.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-
       {/* Optional Contact Button */}
-      <button className="border-2 ml-2 bg-customBlue w-40  py-2 text-white md:text-xl text-md rounded-3xl md:transform md:-translate-x-[45%] lg:transform lg:-translate-x-[60%] transform -translate-x-[15%] ">
+      <button className="border-2 ml-2 bg-customBlue sm:w-40 w-24 py-2  text-white md:text-xl text-md rounded-3xl transform md:-translate-x-[55%]  -translate-x-[28%] sm:-translate-x-[16%] ">
         Contact
       </button>
+     
     </div>
   );
 };

@@ -36,7 +36,7 @@ const Header = () => {
       scrollTrigger: {
         trigger: ".h1",
         start: "top 80%",
-        end: "top 30%",
+        end: "top 80%",
         scrub: true,
       },
     });
@@ -117,7 +117,7 @@ const Header = () => {
           font-semibold */}
         </div>
         <div className="flex w-full justify-center items-center md:w-6/12 ">
-          <div className="flex w-[100%] justify-center items-center rounded-3xl bg-gray-300 p-4 ">
+          <div className="flex w-[80%] justify-center items-center rounded-3xl bg-gray-300 p-4 ">
             <img
               src={image}
               alt="HeaderImg"

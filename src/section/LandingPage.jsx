@@ -3,7 +3,7 @@ import contactUs from "../assets/unnamed-removebg-preview.png";
 import bgImage from "../assets/images.png";
 const LandingPage = () => {
   return (
-    <div className="w-full bg-[#3c005a] md:h-screen h-auto">
+    <div className="w-full bg-[#3c005a] lg:h-screen h-auto md:pb-10">
       <div className="w-full flex flex-col md:flex-row justify-center items-center h-full gap-4 ">
         <div className="md:w-9/12 w-10/12   flex gap-4 flex-col items-center justify-center h-full  ">
           <div className="md:w-8/12 mt-6 ">
@@ -40,12 +40,12 @@ const LandingPage = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
-          className="md:w-4/12 w-10/12 h-full flex items-center justify-center p-4 "
+          className="md:w-6/12 lg:w-4/12 w-10/12 h-full flex items-center justify-center p-4 "
         >
           <img
             src={contactUs}
             alt="Contact Us"
-            className="md:h-[80%]  w-[80%]  object-cover   "
+            className="md:h-[80%]  w-full object-cover sm:w-[70%]   "
           />
         </div>
       </div>
