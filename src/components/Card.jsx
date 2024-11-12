@@ -6,8 +6,8 @@ import { PiCity } from "react-icons/pi";
 const Card = ({ city, address, phone, email, flag, bgColor }) => {
   return (
     <div
-      className="shadow-lg shadow-gray-800 text-black min-h-56  rounded-lg  p-4 flex flex-col justify-between group " // Added flex and justify-between
-      style={{ backgroundColor: bgColor }} // Fixed height for consistent card size
+      className="shadow-lg shadow-gray-800 text-black min-h-56 rounded-lg p-4 flex flex-col justify-between group" // group to enable group-hover
+      style={{ backgroundColor: bgColor }} // Set the background color initially
     >
       <div className="flex gap-4 py-2">
         <img src={flag} alt={`${city} flag`} className="w-8 h-auto" />
@@ -25,17 +25,17 @@ const Card = ({ city, address, phone, email, flag, bgColor }) => {
         </span>
         <p>{phone}</p>
       </div>
-      <div className="flex gap-4 pb-2">
+      <div className="flex gap-4 pb-2 flex-wrap ">
         <span>
           <MdOutlineEmail className="text-2xl text-red-500" />
         </span>
-        <p>{email}</p>
+        <p className="flex">{email}</p>
       </div>
 
-      {/* Apply the hover effect */}
+      {/* Tailwind CSS hover effect: Change bg color when hovered */}
       <style jsx>{`
         .group:hover {
-          background-color: white !important; /* Override dynamic bgColor */
+          background-color: red !important; /* Override the initial bgColor */
         }
       `}</style>
     </div>

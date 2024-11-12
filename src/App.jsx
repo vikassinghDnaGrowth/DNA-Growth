@@ -18,18 +18,18 @@ const App = () => {
   return (
     <>
     {/* <GsapTest/> */}
-      <Navbar />
+      {/* <Navbar /> */}
       <LandingPage />
       <Stepper />
-      <Header />
-      {/* <Services /> */}
+      <Card />
+      <CFO />
+      <WhyUs />
+      <Help />
+      <Team />
       <ContactForm />
       <Carousel />
-      <CFO />
-      <Help />
-      <Card />
-      <WhyUs />
-      <Team />
+      <Header />
+      {/* <Services /> */}
     </>
   );
 };

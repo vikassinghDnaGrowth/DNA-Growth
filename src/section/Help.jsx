@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import tech from "../assets/tech.jpg";
@@ -33,9 +33,32 @@ const dummyData = [
 ];
 
 const Help = () => {
+  const [centerSlidePercentage, setCenterSlidePercentage] = useState(33.33); // default for larger screens
+
+  const handleResize = () => {
+    if (window.innerWidth <= 640) {
+      setCenterSlidePercentage(100); // 100% for screens smaller than 640px
+    } else if (window.innerWidth <= 1040) {
+      setCenterSlidePercentage(50); // 50% for intermediate screen sizes
+    } else {
+      setCenterSlidePercentage(33.33); // 33.33% for larger screens
+    }
+  };
+
+  // Add event listener for window resize
+  useEffect(() => {
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="w-full flex flex-col justify-center items-center py-6">
-      <h1 className="text-3xl font-bold text-customBlue mb-8 text-center">
+      <h1 className="text-lg md:text-3xl font-bold text-customBlue md:mb-8 text-center">
         How We’ve Helped Fractional CFOs Across Industrial & Geographical
         Boundaries Succeed ?
       </h1>
@@ -50,7 +73,7 @@ const Help = () => {
         interval={3000}
         className="w-full"
         centerMode
-        centerSlidePercentage={33.33}
+        centerSlidePercentage={centerSlidePercentage} // use dynamic value
       >
         {dummyData.map((item, index) => (
           <div

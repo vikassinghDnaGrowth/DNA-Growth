@@ -32,8 +32,7 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Financial Planning and Analytics (Goal Setting/ Budgeting/
-                Financial Modeling)
+                Financial Planning and Analytics (Goal Setting/ Budgeting/ Financial Modeling)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">
@@ -68,15 +67,13 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Business Intelligence- Visualizations / Dashboards / MIS
-                (PowerBI, Tableau, FathomHQ, Gsheets)
+                Business Intelligence- Visualizations / Dashboards / MIS (PowerBI, Tableau, FathomHQ, Gsheets)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Automation (Full ETL, Rippling, Python, REST APIs, Zapier,
-                G-Accon)
+                Automation (Full ETL, Rippling, Python, REST APIs, Zapier, G-Accon)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">
@@ -88,8 +85,7 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Business Intelligence- Visualizations / Dashboards / MIS
-                (PowerBI, Tableau, FathomHQ, Gsheets)
+                Business Intelligence- Visualizations / Dashboards / MIS (PowerBI, Tableau, FathomHQ, Gsheets)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">
@@ -112,15 +108,13 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                ERP and Accounting Implementation + Maintenance (NetSuite, QBO,
-                Xero, Zoho, Sage QBD etc)
+                ERP and Accounting Implementation + Maintenance (NetSuite, QBO, Xero, Zoho, Sage QBD etc)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                AR/AP, Invoicing, Payroll, Reconciliation (Bill.com, Chargebee,
-                Gusto, Justworks, ADP etc)
+                AR/AP, Invoicing, Payroll, Reconciliation (Bill.com, Chargebee, Gusto, Justworks, ADP etc)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">

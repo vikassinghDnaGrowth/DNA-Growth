@@ -41,8 +41,10 @@ const WhyUs = () => {
 
   return (
     <div className="flex flex-col items-center w-full p-4 bg-gray-100">
-      <div className="w-full mb-8 text-center">
-        <h3 className="text-xl font-bold p-4">Why Choose Us</h3>
+      <div className="w-full mb-2 md:mb-8 text-center">
+        <h3 className="text-lg md:text-3xl font-bold md:p-4">
+          Why Fractional CFOs Love Working with Us ?
+        </h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-start">
         {/* Left Column */}

@@ -70,18 +70,18 @@ const Stepper = () => {
 
   return (
     <div
-      className="bg-[#D9E4F5]  text-white w-full md:py-10 md:px-28  py-8"
+      className="bg-[#D9E4F5]  text-white w-full md:py-10 md:px-24  py-8 px-6 "
       ref={containerRef}
     >
-      <div className="md:-ml-10 pb-12 p-2 ">
+      <div className="md:-ml-10 pb-12 px-5 ">
         <h1 className="font-roboto-slab text-2xl sm:text-3xl md:text-5xl md:pb-4 pb-2  text-customBlue font-semibold text-nowrap">Let's Help You</h1>
         <h1 className="font-roboto-slab text-2xl sm:text-3xl md:text-5xl text-customBlue font-semibold text-nowrap">Focus On Your Mission</h1>
       </div>
 
       {/* vikas element with border (it needs to be visible for ScrollTrigger to affect it) */}
-      <div className="relative flex ">
-        <div className="border-[1px] border-gray-400 border-opacity-20 hidden md:block"></div>
-        <div className="w-full  md:9/12 flex flex-col md:pl-10 pl-6 md:transform md:-translate-x-[3.7%]  ">
+      <div className=" flex ">
+        <div className="border-l-2 border-gray-300 "></div>
+        <div className="w-full  md:9/12 flex flex-col md:pl-10 pl-6 md:transform md:-translate-x-[7.1%] transform -translate-x-[3.9%] lg:-translate-x-[3.8%]">
           {data.map((item, index) => (
             <div
               key={index}
@@ -93,7 +93,7 @@ const Stepper = () => {
               </div>
 
               {/* Step content */}
-              <div className="md:ml-6  p-2">
+              <div className="md:ml-6    md:p-2 pb-6">
                 <p className="text-customBlue text-lg md:text-2xl font-semibold">{item.title}</p>
                 <p className="text-sm text-black ">{item.description}</p>
               </div>
@@ -103,7 +103,7 @@ const Stepper = () => {
       </div>
 
       {/* Optional Contact Button */}
-      <button className="border-2 ml-2 bg-customBlue md:w-48 w-5/12 py-2 text-white md:text-xl text-md rounded-3xl md:transform md:-translate-x-[55%] ">
+      <button className="border-2 ml-2 bg-customBlue w-40  py-2 text-white md:text-xl text-md rounded-3xl md:transform md:-translate-x-[45%] lg:transform lg:-translate-x-[60%] transform -translate-x-[15%] ">
         Contact
       </button>
     </div>

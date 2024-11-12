@@ -43,13 +43,13 @@ const Header = () => {
 
     // Animating the description with opacity fade-in and movement
     gsap.from(".discription", {
-      y: 110,
+      x: 110,
       opacity: 0, // Start with opacity 0
       duration: 2,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".discription",
-        start: "top 200%",
+        start: "top 150%",
         end: "top 30%",
         scrub: true,
       },
@@ -70,7 +70,7 @@ const Header = () => {
         scrollTrigger: {
           trigger: ".image",
           start: "top 75%", // Start the animation when the image reaches 75% from top of the viewport
-          end: "top 25%", // End when the bottom of the image reaches the top of the viewport
+          end: "top 35%", // End when the bottom of the image reaches the top of the viewport
           scrub: true,
         },
       }
@@ -78,48 +78,50 @@ const Header = () => {
   });
 
   return (
-    <div className="w-full md:h-screen flex justify-center items-center p-4 bg-customBlue">
-      <div className="w-full md:w-10/12 flex md:flex-row flex-col  justify-between gap-4">
-        <div className="flex flex-col justify-center p-4 md:w-7/12  w-full">
-          <div className="flex flex-col md:relative right-20 font-montserrat text-2xl md:3xl font-bold text-white  capitalize gap-4  md:text-nowrap ">
+    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-customBlue ">
+      <div className="w-full lg:w-11/12 flex  md:flex-row flex-col justify-between gap-4">
+        <div className="flex flex-col justify-center p-4 md:w-6/12  w-full ">
+          <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-bold text-white  capitalize gap-4 lg:text-nowrap ">
             <div className="flex gap-6">
-              <span className="checkmark md:text-5xl font-bold text-green-600">
+              <span className="checkmark text-2xl md:text-4xl font-bold text-green-600">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Double your clientele</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark md:text-5xl font-bold  text-green-600">
+              <span className="checkmark text-2xl md:text-4xl font-bold  text-green-600">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Deliver more value to your clients</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark md:text-5xl font-bold  text-green-600">
+              <span className="checkmark text-2xl md:text-4xl font-bold  text-green-600">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Free up your time for strategic work</h1>
             </div>
           </div>
-          <p className="py-8 text-xl md:text-md text-white discription">
-            <span className="pr-2 text-green-400 font-medium">DNA Growth</span>
+          <p className="py-8 text-lg md:text-md text-white discription">
+            <span className="pr-2 text-green-400 md:font-medium ">
+              DNA Growth
+            </span>
             is a leader in Accounting, Finance, and Automation Solutions for the
             CFO Office. We offer tailored solutions to passionate fractional
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-          <button className="w-1/2 rounded-xl mt-2 p-2 bg-white text-black border-2 border-black text-md font-semibold">
+          <button className="md:w-1/2  w-full rounded-xl mt-2 p-2 bg-white text-black border-2 border-black text-md font-semibold  text-nowrap">
             Explore Our Services
           </button>
           {/* rounded-xl block px-[8px] py-[6px] mt-4 text-white text-md
           font-semibold */}
         </div>
-        <div className="flex w-full justify-center items-center ">
-          <div className="flex w-full justify-center items-center rounded-3xl bg-gray-300 p-4  ">
+        <div className="flex w-full justify-center items-center md:w-6/12 ">
+          <div className="flex w-[100%] justify-center items-center rounded-3xl bg-gray-300 p-4 ">
             <img
               src={image}
               alt="HeaderImg"
-              className=" image w-full h-auto  shadow-2xl shadow-black object-cover rounded-3xl  "
+              className=" image w-[100%] h-auto  shadow-2xl shadow-black object-cover rounded-3xl  "
             />
           </div>
         </div>
