@@ -36,7 +36,7 @@ const Carousels = () => {
         </h1>
       </div>
       <Carousel
-        className="w-full bg-[#3c005a] h-auto border-2 border-yellow-400"
+        className="w-full bg-[#3c005a] h-auto "
         showStatus={false}
         showThumbs={false}
         showArrows={true}
@@ -48,7 +48,7 @@ const Carousels = () => {
         interval={5000} // Set interval for autoplay
       >
         {data.map((item, index) => (
-          <div key={index} className="w-full flex justify-center">
+          <div key={index} className="w-full flex justify-center pb-12">
             <div className="flex flex-col w-full max-w-lg px-4 ">
               <h1
                 className={`text-2xl font-bold ${item.titleColor}  text-center capitalize`}
