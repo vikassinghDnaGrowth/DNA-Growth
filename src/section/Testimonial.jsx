@@ -24,7 +24,7 @@ const dummyData = [
   },
 ];
 
-const arrowStyles = "absolute top-1/2 transform -translate-y-1/2 text-customBlue z-10 text-8xl";
+const arrowStyles = "absolute top-1/2 transform -translate-y-1/2 text-customBlue z-10 md:text-8xl text-7xl";
 
 const Testimonial = () => {
   const [centerSlidePercentage, setCenterSlidePercentage] = useState(33.33); // default for larger screens
@@ -73,7 +73,7 @@ const Testimonial = () => {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className={`${arrowStyles} left-10 md:left-8 top-[40%] `}
+                className={`${arrowStyles} left-10 md:left-8 sm:top-[40%] top-[30%] `}
               >
                 &#8249; {/* Left arrow */}
               </button>
@@ -85,7 +85,7 @@ const Testimonial = () => {
                 type="button"
                 onClick={onClickHandler}
                 title={label}
-                className={`${arrowStyles} right-10 md:right-8 top-[40%]`}
+                className={`${arrowStyles} right-10 md:right-8 sm:top-[40%] top-[30%] `}
               >
                 &#8250; {/* Right arrow */}
               </button>
