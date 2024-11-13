@@ -96,10 +96,10 @@ const Stepper = () => {
 
                 {/* Step content */}
                 <div className="md:ml-6    md:p-2 pb-6">
-                  <p className="text-customBlue text-lg md:text-2xl font-semibold">
+                  <p className="text-customBlue text-lg md:text-2xl font-semibold capitalize">
                     {item.title}
                   </p>
-                  <p className="text-sm text-black ">{item.description}</p>
+                  <p className="text-sm text-black capitalize ">{item.description}</p>
                 </div>
               </div>
             ))}

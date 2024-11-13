@@ -126,7 +126,7 @@ const ContactForm = () => {
             </div>
             <div className="mb-4">
               <label className="block text-white" htmlFor="email">
-                Email
+                Email*
               </label>
               <input
                 type="email"
@@ -141,7 +141,7 @@ const ContactForm = () => {
             </div>
             <div className="mb-4">
               <label className="block text-white" htmlFor="contactNumber">
-                Contact Number
+                Contact Number*
               </label>
               <input
                 type="tel"

@@ -34,10 +34,10 @@ const Card = () => {
       {/* Card Section 1 */}
       <div className="w-[90vw] sm:w-[70vw] lg:w-[65vw] h-[40vh] sm:h-[50vh] md:h-[55vh] sticky top-10 flex justify-center">
         <div className="bg-green-500 rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center capitalize">
             We do the ‘grunt’ work
           </h1>
-          <p className="text-center text-base sm:text-lg lg:text-xl">
+          <p className="text-center text-base sm:text-lg lg:text-xl capitalize">
             Get daily bookkeeping, financial reporting, and cash flow management
             for all clients without you needing to micromanage.
           </p>
@@ -47,10 +47,10 @@ const Card = () => {
       {/* Card Section 2 */}
       <div className="w-[90vw] sm:w-[70vw] lg:w-[65vw] h-[40vh] sm:h-[50vh] md:h-[55vh] sticky top-10 flex justify-center">
         <div className="bg-yellow-400 rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center text-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center text-white capitalize">
             We work Along your practice, but under your name
           </h1>
-          <p className="text-center text-base sm:text-lg lg:text-xl">
+          <p className="text-center text-base sm:text-lg lg:text-xl capitalize">
             Our white-label services mean we’re invisible to your clients (as
             long as you wish), but the impact we make? That’s loud & clear.
           </p>
