@@ -43,7 +43,7 @@ const Header = () => {
 
     // Animating the description with opacity fade-in and movement
     gsap.from(".discription", {
-      x: 110,
+      y: -50,
       opacity: 0, // Start with opacity 0
       duration: 2,
       ease: "power1.inOut",
@@ -69,7 +69,7 @@ const Header = () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".image",
-          start: "top 75%", // Start the animation when the image reaches 75% from top of the viewport
+          start: "top 85%", // Start the animation when the image reaches 75% from top of the viewport
           end: "top 35%", // End when the bottom of the image reaches the top of the viewport
           scrub: true,
         },

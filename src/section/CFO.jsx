@@ -7,7 +7,7 @@ const CFO = () => {
       <div className="w-full max-w-7xl py-6 px-4">
         {/* Heading Section */}
         <div className="flex sm:justify-center justify-start items-center pb-6">
-          <h1 className="text-2xl sm:text-5xl font-roboto-slab  text-center capitalize ">
+          <h1 className="text-2xl sm:text-4xl font-roboto-slab  text-center capitalize ">
             We Bring Everything to Your CFO Office
           </h1>
         </div>

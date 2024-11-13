@@ -17,7 +17,7 @@ import Testimonial from "./section/Testimonial";
 const App = () => {
   return (
     <>
-    {/* <GsapTest/> */}
+      {/* <GsapTest/> */}
       {/* <Navbar /> */}
       <LandingPage />
       <Stepper />
@@ -28,7 +28,7 @@ const App = () => {
       <Team />
       <ContactForm />
       <Testimonial />
-      {/* <Header /> */}
+      <Header />
       {/* <Services /> */}
     </>
   );

@@ -51,7 +51,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="w-full flex md:flex-row flex-col py-6 bg-customBlue ">
+    <div className="w-full flex md:flex-row flex-col py-6 bg-[#3c005a] ">
       {/* Carousel on the left */}
       <div className="w-full md:w-1/2 flex justify-center items-center relative">
         <Carousel
