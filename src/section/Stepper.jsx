@@ -82,7 +82,7 @@ const Stepper = () => {
       {/* vikas element with border (it needs to be visible for ScrollTrigger to affect it) */}
       <div className=" flex sm:pl-14 md:pl-0  pl-6">
         <div className="w-full border-l-2 border-gray-300  ">
-          <div className="w-full  md:9/12 flex flex-col transform -translate-x-[0.3%] ">
+          <div className="w-full  md:9/12 flex flex-col transform -translate-x-[0.4%] sm:-translate-x-[0.3%]">
            
             {data.map((item, index) => (
               <div

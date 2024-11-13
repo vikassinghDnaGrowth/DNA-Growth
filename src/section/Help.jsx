@@ -1,34 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import tech from "../assets/tech.jpg";
-import Reducecost from "../assets/Reducecost.jpg";
-import focusOnStrategy from "../assets/focusOnStrategy.jpg";
-import DataClarity from "../assets/DataClarity.jpg";
 
 const dummyData = [
   {
     title: "Tech Transformation",
     description:
       "A tech-focused fractional CFO tripled his client base in 8 months after offloading bookkeeping and FP&A to our team.",
-    image: tech,
+    videoUrl: "https://www.youtube.com/embed/Y1o2l-ASz1g?si=zQzwRHHsCVSLXQyJ", // Replace with actual video URLs
   },
   {
     title: "Digital Innovation",
     description:
       "Implementing digital solutions can enhance productivity and streamline operations.",
-    image: Reducecost,
+    videoUrl: "https://www.youtube.com/embed/Me4unvsjm-c?si=vIinyPBlZe-aLJz_", // Replace with actual video URLs
   },
   {
     title: "Financial Strategies",
     description:
       "Optimize your financial strategy with expert guidance and tailored solutions.",
-    image: focusOnStrategy,
+    videoUrl: "https://www.youtube.com/embed/ilIta3qkoqY?si=_rHxDUQHbl0XQCkk", // Replace with actual video URLs
   },
   {
     title: "Data Clarity",
     description: "Gain insights and clarity through effective data management.",
-    image: DataClarity,
+    videoUrl: "https://www.youtube.com/embed/FbYd78gDdEw?si=f9k-QSqJF7_9nT44", // Replace with actual video URLs
   },
 ];
 
@@ -57,8 +53,8 @@ const Help = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-6">
-      <h1 className="text-lg md:text-3xl font-bold text-customBlue md:mb-8 text-center">
+    <div className="w-full flex flex-col justify-center items-center py-6 bg-[#000000]">
+      <h1 className="text-lg md:text-3xl font-bold text-white md:mb-8 text-center p-2">
         How We’ve Helped Fractional CFOs Across Industrial & Geographical
         Boundaries Succeed ?
       </h1>
@@ -78,19 +74,24 @@ const Help = () => {
         {dummyData.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-lg p-6 m-4 bg-green-300 transition-transform duration-300 ease-in-out transform hover:scale-110"
+            className=" flex flex-col items-center rounded-lg p-4 m-4   border-2 border-gray-500     transition-transform duration-300 ease-in-out transform hover:scale-105  "
           >
-            <div className="w-full mb-4">
-              <img
-                src={item.image}
-                alt={`Image for ${item.title}`}
+            <div className="w-full mb-4 ">
+              {/* Render video iframe instead of image */}
+              <iframe
+                width="100%"
+                src={item.videoUrl}
+                title={`Video for ${item.title}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
                 className="w-full h-64 object-cover rounded-md"
-              />
+              ></iframe>
             </div>
-            <h2 className="text-2xl font-bold text-customBlue mb-2 text-center">
+            <h2 className="text-2xl font-bold text-white mb-2 text-center">
               {item.title}
             </h2>
-            <p className="text-base text-black text-center">
+            <p className="text-base text-white text-center">
               {item.description}
             </p>
           </div>

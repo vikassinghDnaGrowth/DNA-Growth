@@ -45,7 +45,7 @@ const LandingPage = () => {
           <img
             src={contactUs}
             alt="Contact Us"
-            className="md:h-[80%]  w-full object-cover sm:w-[70%]   "
+            className="md:h-[80%]  w-full object-cover sm:w-[70%]    "
           />
         </div>
       </div>

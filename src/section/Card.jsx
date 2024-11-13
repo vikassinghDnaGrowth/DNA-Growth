@@ -16,8 +16,8 @@ const Card = () => {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center font-roboto-slab py-2">
           DNA Growth Has Your Back (and Your Brand’s)
         </h1>
-        <p className="text-base sm:text-lg lg:text-xl text-yellow-300 pt-2 px-4 sm:px-14">
-          <span className="text-lg sm:text-xl text-slate-100">
+        <p className="text-base sm:text-lg lg:text-xl md:text-yellow-300 text-white pt-2 px-4 sm:px-14 ">
+          <span className="text-lg sm:text-xl text-slate-100 ">
             Our White-Label CFO Support Has One Goal:{" "}
           </span>
           To make You one-stop support for Your Clients & Build Better Business

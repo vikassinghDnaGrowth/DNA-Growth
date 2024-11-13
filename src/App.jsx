@@ -28,7 +28,7 @@ const App = () => {
       <Team />
       <ContactForm />
       <Carousel />
-      {/* <Header /> */}
+      <Header />
       {/* <Services /> */}
     </>
   );

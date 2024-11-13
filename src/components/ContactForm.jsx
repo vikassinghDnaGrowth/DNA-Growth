@@ -84,7 +84,7 @@ const ContactForm = () => {
             Grow Your Business Today
           </h1>
           {cardData.map((card, index) => (
-            <div key={index} className="p-2 w-full sm:w-1/2">
+            <div key={index} className="p-2 w-full md:w-1/2">
               <Card
                 city={card.city}
                 address={card.address}
