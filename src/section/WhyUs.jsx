@@ -42,7 +42,7 @@ const WhyUs = () => {
   return (
     <div className="flex flex-col items-center w-full p-4 bg-gray-100">
       <div className="w-full mb-2 md:mb-8 text-center">
-        <h3 className="text-lg md:text-3xl font-bold md:p-4">
+        <h3 className="text-lg md:text-4xl font-bold md:p-4 capitalize">
           Why Fractional CFOs Love Working with Us ?
         </h3>
       </div>
@@ -59,8 +59,8 @@ const WhyUs = () => {
                 alt={item.title}
                 className="h-40 w-full object-cover mb-4"
               />
-              <h4 className="text-lg font-semibold">{item.title}</h4>
-              <p className="text-gray-600">{item.description}</p>
+              <h4 className="text-lg font-semibold capitalize">{item.title}</h4>
+              <p className="text-gray-600 capitalize">{item.description}</p>
             </div>
           ))}
         </div>
@@ -88,8 +88,8 @@ const WhyUs = () => {
                 alt={item.title}
                 className="h-40 w-full object-cover mb-4"
               />
-              <h4 className="text-lg font-semibold ">{item.title}</h4>
-              <p className="text-gray-600">{item.description}</p>
+              <h4 className="text-lg font-semibold capitalize ">{item.title}</h4>
+              <p className="text-gray-600 capitalize">{item.description}</p>
             </div>
           ))}
         </div>

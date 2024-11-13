@@ -79,8 +79,8 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col w-full  bg-[#226ba7] justify-around  pb-6  ">
       <div className="flex flex-wrap justify-around w-full items-center ">
-        <div className="w-full lg:w-7/12 flex flex-wrap justify-center ">
-          <h1 className="text-2xl md:text-5xl font-bold font-roboto-slab text-white p-6 uppercase ml-2  ">
+        <div className="w-full lg:w-7/12 flex flex-wrap justify-start sm:justify-center ">
+          <h1 className="text-3xl sm:text-4xl font-bold font-roboto-slab text-white sm:p-6 p-3 uppercase   ">
             Grow Your Business Today
           </h1>
           {cardData.map((card, index) => (
@@ -97,7 +97,7 @@ const ContactForm = () => {
           ))}
         </div>
         <div className="w-full lg:w-4/12  px-6 py-4  m-2  rounded-lg ">
-          <h1 className="text-2xl md:text-5xl text-center text-white font-bold py-4 font-roboto-slab  uppercase">
+          <h1 className="text-3xl md:text-4xl text-center text-white font-bold py-4 font-roboto-slab  uppercase">
             Get In Touch
           </h1>
           <form
@@ -111,7 +111,7 @@ const ContactForm = () => {
             )}
             <div className="mb-6">
               <label className="block  text-white" htmlFor="name">
-                Name
+                Name*
               </label>
               <input
                 type="text"
@@ -141,7 +141,7 @@ const ContactForm = () => {
             </div>
             <div className="mb-4">
               <label className="block text-white" htmlFor="contactNumber">
-                Contact Number*
+                Contact Number
               </label>
               <input
                 type="tel"

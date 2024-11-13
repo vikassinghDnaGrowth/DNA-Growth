@@ -72,18 +72,17 @@ const Stepper = () => {
       ref={containerRef}
     >
       <div className="md:-ml-10 pb-12 md:pl-0 sm:pl-12 pl-4">
-        <h1 className="font-roboto-slab text-2xl sm:text-3xl md:text-5xl md:pb-4 pb-2  text-customBlue font-semibold ">
-          Let's Help You
+        <h1 className="font-roboto-slab text-2xl  md:text-4xl md:pb-4 pb-2  text-customBlue font-semibold  ">
+          We Get It—It’s
         </h1>
-        <h1 className="font-roboto-slab text-2xl  sm:text-3xl md:text-5xl text-customBlue font-semibold ">
-          Focus On Your Mission
+        <h1 className="font-roboto-slab text-2xl  md:text-4xl text-customBlue font-semibold ">
+          Tough Out There
         </h1>
       </div>
       {/* vikas element with border (it needs to be visible for ScrollTrigger to affect it) */}
       <div className=" flex sm:pl-14 md:pl-0  pl-6">
         <div className="w-full border-l-2 border-gray-300  ">
           <div className="w-full  md:9/12 flex flex-col transform -translate-x-[0.4%] sm:-translate-x-[0.3%]">
-           
             {data.map((item, index) => (
               <div
                 key={index}
@@ -99,7 +98,9 @@ const Stepper = () => {
                   <p className="text-customBlue text-lg md:text-2xl font-semibold capitalize">
                     {item.title}
                   </p>
-                  <p className="text-sm text-black capitalize ">{item.description}</p>
+                  <p className="text-sm md:text-lg text-black capitalize ">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -107,10 +108,9 @@ const Stepper = () => {
         </div>
       </div>
       {/* Optional Contact Button */}
-      <button className="border-2 ml-2 bg-customBlue sm:w-40 w-24 py-2  text-white md:text-xl text-md rounded-3xl transform md:-translate-x-[55%]  -translate-x-[28%] sm:-translate-x-[16%] ">
-        Contact
+      <button className="border-2 capitalize ml-2 bg-customBlue sm:w-40 w-24 py-2  text-white md:text-xl text-md rounded-3xl transform md:-translate-x-[55%]  -translate-x-[28%] sm:-translate-x-[16%] ">
+        Contact us
       </button>
-     
     </div>
   );
 };

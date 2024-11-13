@@ -6,12 +6,12 @@ import WhyUs from "./section/WhyUs";
 import ContactForm from "./components/ContactForm";
 import CFO from "./section/CFO";
 import Carousel from "./section/Carousel";
-import Help from "./section/Help";
 import LandingPage from "./section/LandingPage";
 import Card from "./section/Card";
 import Team from "./section/Team";
 import Stepper from "./section/Stepper";
 import GsapTest from "./section/GsapTest";
+import Testimonial from "./section/Testimonial";
 // import ImageScroll from "./section/ImageScroll";
 
 const App = () => {
@@ -24,11 +24,11 @@ const App = () => {
       <Card />
       <CFO />
       <WhyUs />
-      <Help />
+      <Carousel />
       <Team />
       <ContactForm />
-      <Carousel />
-      <Header />
+      <Testimonial />
+      {/* <Header /> */}
       {/* <Services /> */}
     </>
   );

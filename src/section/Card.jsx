@@ -13,7 +13,7 @@ const Card = () => {
       }}
     >
       <div className="flex flex-col justify-center items-center p-6 px-4">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center font-roboto-slab py-2">
+        <h1 className="text-3xl sm:text-4xl  font-bold text-white text-center font-roboto-slab py-2 capitalize">
           DNA Growth Has Your Back (and Your Brand’s)
         </h1>
         <p className="text-base sm:text-lg lg:text-xl md:text-yellow-300 text-white pt-2 px-4 sm:px-14 ">
@@ -33,11 +33,11 @@ const Card = () => {
 
       {/* Card Section 1 */}
       <div className="w-[90vw] sm:w-[70vw] lg:w-[65vw] h-[40vh] sm:h-[50vh] md:h-[55vh] sticky top-10 flex justify-center">
-        <div className="bg-green-500 rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
+        <div className="bg-[#3c005a] rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center capitalize">
             We do the ‘grunt’ work
           </h1>
-          <p className="text-center text-base sm:text-lg lg:text-xl capitalize">
+          <p className="text-center text-base sm:text-lg lg:text-xl capitalize text-white">
             Get daily bookkeeping, financial reporting, and cash flow management
             for all clients without you needing to micromanage.
           </p>
@@ -46,11 +46,11 @@ const Card = () => {
 
       {/* Card Section 2 */}
       <div className="w-[90vw] sm:w-[70vw] lg:w-[65vw] h-[40vh] sm:h-[50vh] md:h-[55vh] sticky top-10 flex justify-center">
-        <div className="bg-yellow-400 rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center text-white capitalize">
+        <div className="bg-white rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center text-black capitalize">
             We work Along your practice, but under your name
           </h1>
-          <p className="text-center text-base sm:text-lg lg:text-xl capitalize">
+          <p className="text-center text-base sm:text-lg lg:text-xl capitalize text-black">
             Our white-label services mean we’re invisible to your clients (as
             long as you wish), but the impact we make? That’s loud & clear.
           </p>
@@ -59,11 +59,11 @@ const Card = () => {
 
       {/* Card Section 3 */}
       <div className="w-[90vw] sm:w-[70vw] lg:w-[65vw] h-[40vh] sm:h-[50vh] md:h-[55vh] sticky top-10 flex justify-center">
-        <div className="bg-red-500 rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center text-white">
+        <div className="bg-customBlue rounded-3xl w-full flex flex-col justify-center items-center p-4 gap-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center text-white capitalize">
             We plug into your tech stack
           </h1>
-          <p className="text-center text-base sm:text-lg lg:text-xl">
+          <p className="text-center text-base sm:text-lg lg:text-xl capitalize text-white">
             Whether it’s Sage Intacct, NetSuite, PowerBI, QBO, or a custom-built
             system—we integrate with what you’re already using.
           </p>
