@@ -33,7 +33,7 @@ const TeamCard = ({ member }) => {
   };
 
   return (
-    <div className="border-2 border-gray-500 w-full md:w-5/12 flex flex-col items-center rounded-lg p-4 relative mb-8">
+    <div className="border-2 border-gray-500 w-full md:w-5/12 flex flex-col items-center rounded-lg relative p-10">
       <div className="flex justify-center mb-4 absolute -top-10">
         <img
           src={avatar}
@@ -63,14 +63,14 @@ const TeamCard = ({ member }) => {
 
 const Team = () => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center bg-green-400 py-10 " >
       <div className="w-full flex gap-2 justify-center">
-        <div className="w-2/12 bg-green-300 flex justify-center items-center">
-          <h1 className="-rotate-90 text-4xl md:text-7xl font-semibold text-customBlue font-roboto-slab text-nowrap">
+        <div className="w-2/12  flex justify-center items-center ">
+          <h1 className="-rotate-90 text-4xl md:text-6xl font-semibold text-customBlue font-roboto-slab text-nowrap">
             Meet Our Team
           </h1>
         </div>
-        <div className="w-10/12 pt-12 flex justify-center flex-wrap p-4 gap-4 bg-green-400">
+        <div className="w-10/12 pt-12 flex justify-center flex-wrap p-4 gap-4 bg-green-400 ">
           {teamMembers.map((member, index) => (
             <TeamCard key={index} member={member} />
           ))}

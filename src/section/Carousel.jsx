@@ -29,7 +29,7 @@ const Carousels = () => {
 
   return (
     <>
-      <div className="text-xl md:text-4xl font-roboto-slab leading-normal font-bold  flex justify-center bg-[#3c005a] py-4">
+      <div className="text-xl md:text-4xl font-roboto-slab leading-normal font-bold  flex justify-center bg-[#3c005a] py-10">
         <h1 className="  font-roboto-slab text-center capitalize  text-white">
           How We’ve Helped Fractional CFOs Across Industrial & geographical
           boundaries Succeed?
@@ -56,7 +56,7 @@ const Carousels = () => {
                 {item.title}
               </h1>
               <p
-                className={`mt-2 text-lg text-${item.descriptionColor} text-center capitalize`}
+                className={`mt-2 text-lg text-${item.descriptionColor} text-center `}
               >
                 {item.description}
               </p>

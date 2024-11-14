@@ -40,9 +40,9 @@ const WhyUs = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full p-4 bg-gray-100">
-      <div className="w-full mb-2 md:mb-8 text-center">
-        <h3 className="text-xl md:text-4xl font-bold md:p-4 capitalize">
+    <div className="flex flex-col items-center py-10 w-full  bg-gray-100">
+      <div className="w-full  text-center pb-6">
+        <h3 className="text-xl md:text-4xl font-bold  capitalize">
           Why Fractional CFOs Love Working with Us ?
         </h3>
       </div>
@@ -60,20 +60,22 @@ const WhyUs = () => {
                 className="h-40 w-full object-cover mb-4"
               />
               <h4 className="text-lg font-semibold capitalize">{item.title}</h4>
-              <p className="text-gray-600 capitalize">{item.description}</p>
+              <p className="text-gray-600 ">{item.description}</p>
             </div>
           ))}
         </div>
 
         {/* Center Card */}
-        <div className="border-2 border-gray-200 shadow-xl rounded-lg p-4 h-full flex flex-col justify-center">
-          <img
-            src={Data[2].image}
-            alt={Data[2].title}
-            className="h-64 w-full object-cover mb-4"
-          />
-          <h4 className="text-lg font-semibold " >{Data[2].title}</h4>
-          <p className="text-gray-600">{Data[2].description}</p>
+        <div className=" h-full flex justify-center items-center">
+          <div className="border-2 border-gray-200 shadow-xl rounded-lg p-4  flex flex-col justify-center">
+            <img
+              src={Data[2].image}
+              alt={Data[2].title}
+              className="h-64 w-full object-cover mb-4"
+            />
+            <h4 className="text-lg font-semibold ">{Data[2].title}</h4>
+            <p className="text-gray-600">{Data[2].description}</p>
+          </div>
         </div>
 
         {/* Right Column */}
@@ -88,8 +90,10 @@ const WhyUs = () => {
                 alt={item.title}
                 className="h-40 w-full object-cover mb-4"
               />
-              <h4 className="text-lg font-semibold capitalize ">{item.title}</h4>
-              <p className="text-gray-600 capitalize">{item.description}</p>
+              <h4 className="text-lg font-semibold capitalize ">
+                {item.title}
+              </h4>
+              <p className="text-gray-600">{item.description}</p>
             </div>
           ))}
         </div>

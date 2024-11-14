@@ -32,7 +32,7 @@ const Header = () => {
       duration: 1,
       ease: "sine.in",
       stagger: 0.5, // Stagger the animation for each <h1> element
-      delay: 0.3, // Delay the h1 animation to start after the span animation
+      delay: 1, // Delay the h1 animation to start after the span animation
       scrollTrigger: {
         trigger: ".h1",
         start: "top 80%",

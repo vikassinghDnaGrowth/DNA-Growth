@@ -51,7 +51,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="w-full flex md:flex-row flex-col py-6 bg-[#3c005a] ">
+    <div className="w-full flex md:flex-row flex-col py-10 bg-[#3c005a] ">
       {/* Carousel on the left */}
       <div className="w-full md:w-1/2 flex justify-center items-center relative">
         <Carousel
@@ -121,7 +121,7 @@ const Testimonial = () => {
         <div>
           <p className="italic text-yellow-400">YOUR SUCCESS IS OUR PRIDE</p>
           <h1 className="text-lg md:text-3xl font-bold text-white mb-8 text-left">
-            HEAR FROM OUR HAPPY fRAC. cfo FAMILY
+            HEAR FROM OUR HAPPY fRAC. CFO FAMILY
           </h1>
           <p className="text-white text-lg mb-2">
             A COMPLIMENTARY CALL WITH OUR SUBJECT MATTER EXPERTS TO SEE IF WE

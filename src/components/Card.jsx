@@ -25,7 +25,7 @@ const Card = ({ city, address, phone, email, flag, bgColor }) => {
         </span>
         <p>{phone}</p>
       </div>
-      <div className="flex gap-4 pb-2 overflow-hidden  ">
+      <div className="flex gap-4 pb-2 overflow-hidden">
         <span>
           <MdOutlineEmail className="text-2xl text-red-500" />
         </span>
@@ -33,11 +33,9 @@ const Card = ({ city, address, phone, email, flag, bgColor }) => {
       </div>
 
       {/* Tailwind CSS hover effect: Change bg color when hovered */}
-      <style jsx>{`
-        .group:hover {
-          background-color: gray  !important; color:white ! important /* Override the initial bgColor */
-        }
-      `}</style>
+      <div className="group-hover:bg-gray-500 group-hover:text-white transition duration-200 ease-in-out">
+        {/* This will change the background color when hovering */}
+      </div>
     </div>
   );
 };

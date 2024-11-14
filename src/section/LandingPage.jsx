@@ -3,7 +3,7 @@ import contactUs from "../assets/unnamed-removebg-preview.png";
 import bgImage from "../assets/images.png";
 const LandingPage = () => {
   return (
-    <div className="w-full bg-[#3c005a] lg:h-screen h-auto md:pb-10">
+    <div className="w-full bg-[#3c005a]  h-auto py-10">
       <div className="w-full flex flex-col md:flex-row justify-center items-center h-full gap-4 ">
         <div className="md:w-9/12 w-10/12   flex gap-4 flex-col items-center justify-center h-full  ">
           <div className="md:w-8/12 mt-6 ">
@@ -17,7 +17,7 @@ const LandingPage = () => {
               </h1>
             </header>
             <div>
-              <p className="py-2 md:text-md text-sm font-montserrat text-white  capitalize">
+              <p className="py-2 md:text-md text-sm font-montserrat text-white  ">
                 Drowning in financial reports and spreadsheets? Imagine
                 offloading accounting, bookkeeping, modeling, and daily
                 operations without a big team. DNA Growth helps fractional CFOs

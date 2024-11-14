@@ -77,7 +77,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full  bg-[#226ba7] justify-around  pb-6  ">
+    <div className="flex flex-col w-full  bg-[#226ba7] justify-around   py-10">
       <div className="flex flex-wrap justify-around w-full items-center  ">
         <div className="w-full lg:w-7/12 flex flex-wrap justify-start sm:justify-center ">
           <h1 className="text-3xl sm:text-4xl font-bold font-roboto-slab text-white sm:p-6 p-3 uppercase   ">

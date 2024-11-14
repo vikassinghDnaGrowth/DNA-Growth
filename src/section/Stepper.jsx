@@ -68,7 +68,7 @@ const Stepper = () => {
 
   return (
     <div
-      className="bg-[#D9E4F5]  text-white w-full md:py-10 md:px-24  py-8 px-6 "
+      className="bg-[#D9E4F5]  text-white w-full py-10 md:px-24   px-6 "
       ref={containerRef}
     >
       <div className="md:-ml-10 pb-12 md:pl-0 sm:pl-12 pl-4">
@@ -98,7 +98,7 @@ const Stepper = () => {
                   <p className="text-customBlue text-lg md:text-2xl font-semibold capitalize">
                     {item.title}
                   </p>
-                  <p className="text-sm md:text-lg text-black capitalize ">
+                  <p className="text-sm md:text-lg text-black  ">
                     {item.description}
                   </p>
                 </div>
@@ -108,7 +108,7 @@ const Stepper = () => {
         </div>
       </div>
       {/* Optional Contact Button */}
-      <button className="border-2 capitalize ml-2 bg-customBlue sm:w-40 w-24 py-2  text-white md:text-xl text-md rounded-3xl transform md:-translate-x-[55%]  -translate-x-[28%] sm:-translate-x-[16%] ">
+      <button className="border-2 capitalize ml-2 bg-customBlue sm:w-40 w-24 py-2  text-white md:text-xl text-sm rounded-3xl transform md:-translate-x-[55%]  -translate-x-[28%] sm:-translate-x-[16%] ">
         Contact us
       </button>
     </div>
