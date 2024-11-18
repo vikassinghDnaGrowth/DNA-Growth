@@ -13,14 +13,14 @@ const Header = () => {
     // Animating the span elements first (fade-in)
     gsap.from(".checkmark", {
       opacity: 0, // Start with opacity 0
-      x: -20, // Start with a slight upward offset
+      x: -30, // Start with a slight upward offset
       duration: 1,
       ease: "power1.inOut",
       stagger: 0.3, // Stagger the animation for each <span> element
       scrollTrigger: {
         trigger: ".checkmark",
-        start: "top 90%",
-        end: "top 30%",
+        start: "top 85%",
+        end: "top 35%",
         scrub: true,
       },
     });
@@ -28,15 +28,16 @@ const Header = () => {
     // Animating the h1 elements after the span elements (fade-in with a delay)
     gsap.from(".h1", {
       opacity: 0,
-      x: -30, // Start with horizontal offset
+      x: -60, // Start with horizontal offset
       duration: 1,
       ease: "sine.in",
+
       stagger: 0.5, // Stagger the animation for each <h1> element
       delay: 1, // Delay the h1 animation to start after the span animation
       scrollTrigger: {
         trigger: ".h1",
         start: "top 80%",
-        end: "top 80%",
+        end: "top 35%",
         scrub: true,
       },
     });
@@ -110,7 +111,7 @@ const Header = () => {
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-          <button className="md:w-1/2  w-full rounded-xl mt-2 p-2 bg-white text-black border-2 border-black text-md font-semibold  text-nowrap">
+          <button className="sm:w-1/2  w-full rounded-xl mt-2 p-2 bg-white text-black border-2 border-black text-sm font-semibold  ">
             Explore Our Services
           </button>
           {/* rounded-xl block px-[8px] py-[6px] mt-4 text-white text-md

@@ -33,7 +33,7 @@ const TeamCard = ({ member }) => {
   };
 
   return (
-    <div className="border-2 border-gray-500 w-full md:w-5/12 flex flex-col items-center rounded-lg relative p-10">
+    <div className="border-2 border-gray-500 w-full md:w-5/12 flex flex-col items-center rounded-lg relative py-10 mb-10 ">
       <div className="flex justify-center mb-4 absolute -top-10">
         <img
           src={avatar}
@@ -41,11 +41,11 @@ const TeamCard = ({ member }) => {
           className="w-1/4 md:w-3/12 rounded-full"
         />
       </div>
-      <div className="flex flex-col items-center mb-2 text-center pt-14">
+      <div className="flex flex-col items-center mb-2 text-center pt-14 text-white">
         <h1 className="text-xl md:text-2xl">{name}</h1>
         <p className="text-sm md:text-lg">({title})</p>
       </div>
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between px-2 w-full text-white">
         <p className="text-xs md:text-sm">
           {isExpanded ? description : `${description.substring(0, 100)}...`}{" "}
           {/* Show truncated description */}
@@ -53,7 +53,7 @@ const TeamCard = ({ member }) => {
       </div>
       <button
         onClick={toggleDescription}
-        className="mt-2 text-blue-600 underline text-xs md:text-sm"
+        className="mt-2 text-white underline text-xs md:text-sm"
       >
         {isExpanded ? "Read Less" : "Read More"}
       </button>
@@ -63,14 +63,14 @@ const TeamCard = ({ member }) => {
 
 const Team = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-green-400 py-10 " >
+    <div className="w-full flex flex-col items-center bg-customBlue py-10 " >
       <div className="w-full flex gap-2 justify-center">
         <div className="w-2/12  flex justify-center items-center ">
-          <h1 className="-rotate-90 text-4xl md:text-6xl font-semibold text-customBlue font-roboto-slab text-nowrap">
+          <h1 className="-rotate-90 text-4xl md:text-6xl font-semibold text-white font-roboto-slab text-nowrap">
             Meet Our Team
           </h1>
         </div>
-        <div className="w-10/12 pt-12 flex justify-center flex-wrap p-4 gap-4 bg-green-400 ">
+        <div className="w-10/12 pt-12 flex justify-center flex-wrap p-4 gap-4 bg-customBlue ">
           {teamMembers.map((member, index) => (
             <TeamCard key={index} member={member} />
           ))}

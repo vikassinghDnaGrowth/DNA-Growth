@@ -29,7 +29,7 @@ const Carousels = () => {
 
   return (
     <>
-      <div className="text-xl md:text-4xl font-roboto-slab leading-normal font-bold  flex justify-center bg-[#3c005a] py-10">
+      <div className="text-xl md:text-4xl font-roboto-slab leading-normal font-bold  flex justify-center bg-[#3c005a] py-10 px-2">
         <h1 className="  font-roboto-slab text-center capitalize  text-white">
           How We’ve Helped Fractional CFOs Across Industrial & geographical
           boundaries Succeed?

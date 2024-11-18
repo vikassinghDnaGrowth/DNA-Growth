@@ -79,12 +79,12 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col w-full  bg-[#226ba7] justify-around   py-10">
       <div className="flex flex-wrap justify-around w-full items-center  ">
-        <div className="w-full lg:w-7/12 flex flex-wrap justify-start sm:justify-center ">
-          <h1 className="text-3xl sm:text-4xl font-bold font-roboto-slab text-white sm:p-6 p-3 uppercase   ">
+        <div className="w-11/12 lg:w-7/12 md:w-11/12 sm:w-11/12  flex flex-wrap justify-start sm:justify-center ">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-roboto-slab text-white sm:p-6 p-3 uppercase   ">
             Grow Your Business Today
           </h1>
           {cardData.map((card, index) => (
-            <div key={index} className="p-2 w-full md:w-1/2">
+            <div key={index} className="p-2  md:w-1/2 sm:w-6/12 w-full   ">
               <Card
                 city={card.city}
                 address={card.address}
@@ -96,13 +96,13 @@ const ContactForm = () => {
             </div>
           ))}
         </div>
-        <div className="w-full lg:w-4/12  px-6 py-4  m-2  rounded-lg ">
-          <h1 className="text-3xl md:text-4xl text-center text-white font-bold py-4 font-roboto-slab  uppercase">
+        <div className="w-11/12 lg:w-4/12  px-6  md:w-9/12  sm:w-9/12  rounded-lg py-10">
+          <h1 className="text-2xl md:text-4xl text-center text-white font-bold  font-roboto-slab  pb-4  uppercase">
             Get In Touch
           </h1>
           <form
             onSubmit={handleSubmit}
-            className="shadow-lg shadow-gray-700 p-8 rounded-lg"
+            className="shadow-lg shadow-gray-700 p-6 rounded-lg"
           >
             {error && (
               <p className="text-red-600" aria-live="polite">

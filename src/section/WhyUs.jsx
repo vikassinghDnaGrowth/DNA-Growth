@@ -41,10 +41,16 @@ const WhyUs = () => {
 
   return (
     <div className="flex flex-col items-center py-10 w-full  bg-gray-100">
-      <div className="w-full  text-center pb-6">
-        <h3 className="text-xl md:text-4xl font-bold  capitalize px-2">
+      <div className="w-full  text-center sm:pb-6 pb-4 flex flex-col">
+        <h3 className="text-lg md:text-4xl font-bold  capitalize px-2  hidden sm:block">
           Why Fractional CFOs Love Working with Us ?
         </h3>
+        <span className="sm:hidden text-lg md:text-4xl font-bold  capitalize px-2">
+          Why Fractional CFOs Love
+        </span>
+        <span className="sm:hidden text-lg md:text-4xl font-bold  capitalize px-2">
+          Working with Us ?
+        </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-start">
         {/* Left Column */}
