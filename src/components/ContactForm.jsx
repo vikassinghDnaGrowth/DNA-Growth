@@ -96,13 +96,13 @@ const ContactForm = () => {
             </div>
           ))}
         </div>
-        <div className="w-11/12 lg:w-4/12  px-6  md:w-9/12  sm:w-9/12  rounded-lg py-10">
-          <h1 className="text-2xl md:text-4xl text-center text-white font-bold  font-roboto-slab  pb-4  uppercase">
+        <div className="w-11/12 lg:w-4/12  px-6  md:w-9/12  sm:w-9/12  rounded-lg ">
+          <h1 className="text-2xl md:text-4xl text-center text-white font-bold  font-roboto-slab   uppercasez transform translate-y-[47px]">
             Get In Touch
           </h1>
           <form
             onSubmit={handleSubmit}
-            className="shadow-lg shadow-gray-700 p-6 rounded-lg"
+            className="shadow-lg shadow-gray-700 p-6 rounded-lg  mt-16"
           >
             {error && (
               <p className="text-red-600" aria-live="polite">
@@ -185,4 +185,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
