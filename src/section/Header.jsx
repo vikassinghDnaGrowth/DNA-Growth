@@ -111,11 +111,13 @@ const Header = () => {
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-          <button className="sm:w-1/2  w-full rounded-xl mt-2 p-2 bg-white text-black border-2 border-black text-sm font-semibold  ">
+          <button className="sm:w-1/2  w-full rounded-xl  px-[8px] py-[6px] bg-white text-black border-2 border-black text-md font-semibold  ">
             Explore Our Services
           </button>
-          {/* rounded-xl block px-[8px] py-[6px] mt-4 text-white text-md
-          font-semibold */}
+          {/* //{" "}
+          <button className="border-2 bg-[rgb(207,77,113)]  rounded-xl block px-[8px] py-[6px]   text-white text-md font-semibold mt-4 capitalize">
+            // Let’s Level Up Your practice //{" "}
+          </button> */}
         </div>
         <div className="flex w-full justify-center items-center md:w-6/12 ">
           <div className="flex w-[80%] justify-center items-center rounded-3xl bg-gray-300 p-4 ">

@@ -35,7 +35,7 @@ const Card = () => {
       </div>
 
       {/* Card Section 1 */}
-      <div className="bg-[#3c005a] rounded-lg p-6 w-full sm:w-[90vw] lg:w-[65vw] h-auto sm:h-[50vh] md:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center">
+      <div className="bg-[#3c005a] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center  ">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center sm:text-left capitalize">
             We do the ‘grunt’ work
@@ -55,9 +55,9 @@ const Card = () => {
       </div>
 
       {/* Card Section 2 */}
-      <div className="bg-white rounded-lg p-6 w-full sm:w-[90vw] lg:w-[65vw] h-auto sm:h-[50vh] md:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center">
+      <div className="bg-white rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
-          <h1 className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-roboto-slab text-center sm:text-left text-black capitalize">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-black capitalize">
             We work Along your practice, but under your name
           </h1>
           <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-black">
@@ -69,13 +69,13 @@ const Card = () => {
           <img
             src={image2}
             alt="Image 2"
-            className="w-full h-full object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
+            className="w-[90vw] h-[90vh] object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
           />
         </div>
       </div>
 
       {/* Card Section 3 */}
-      <div className="bg-customBlue rounded-lg p-6 w-full sm:w-[90vw] lg:w-[65vw] h-auto sm:h-[50vh] md:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center">
+      <div className="bg-customBlue rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We plug into your tech stack

@@ -204,7 +204,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-gray-900 py-12 ">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-gray-900 py-10 p-4 ">
       {/* Left Side: Carousel */}
       <div className="w-full md:w-5/12 mb-8 md:mb-0  rounded-lg  bg-white  p-4 m-4">
         <div className="relative max-w-4xl mx-auto">
