@@ -117,7 +117,7 @@ const TeamCard = ({ member }) => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="border-2 border-gray-500 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12   min-h-[65vh] hover:bg-gray-800  hover:text-white">
+    <div className="border-2 border-gray-500 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12 h-full  sm:min-h-[65vh] hover:bg-gray-800  hover:text-white">
       <div className="flex justify-center mb-4">
         <img
           src={avatar}
@@ -125,7 +125,7 @@ const TeamCard = ({ member }) => {
           className="w-1/4 md:w-9/12 rounded-full"
         />
       </div>
-      <div className="flex flex-col items-center mb-4 text-center px-2">
+      <div className="flex flex-col items-center mb-2 text-center px-2">
         <h1 className="text-xl md:text-2xl">{name}</h1>
         <p className="text-sm md:text-lg  ">({title})</p>
       </div>
@@ -169,14 +169,14 @@ const TeamCard = ({ member }) => {
 
 const Team = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-customBlue sm:py-10 ">
+    <div className="w-full flex flex-col items-center bg-customBlue py-10 ">
       <div className="w-full flex sm:flex-row flex-col gap-2 justify-around ">
         <div className="w-full sm:w-2/12 lg:w-1/12 flex justify-center items-center   ">
           <h1 className="sm:-rotate-90 text-4xl sm:text-5xl md:text-7xl font-semibold text-white font-roboto-slab text-nowrap   mb-6 sm:mb-0">
             Meet Our Team
           </h1>
         </div>
-        <div className="w-full sm:w-8/12  gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-customBlue justify-items-center ">
+        <div className="w-full sm:w-8/12  gap-6 sm:gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-customBlue justify-items-center ">
           {teamMembers.map((member, index) => (
             <TeamCard key={index} member={member} />
           ))}
