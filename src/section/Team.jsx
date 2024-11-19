@@ -146,11 +146,11 @@ const TeamCard = ({ member }) => {
           onClick={closeModal} // Close modal when clicking outside
         >
           <div
-            className="bg-gray-900 rounded-lg w-10/12 md:w-1/3 p-6"
+            className="bg-white rounded-lg w-10/12 md:w-1/3 p-6"
             onClick={(e) => e.stopPropagation()} // Prevent close when clicking inside modal
           >
             <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-semibold text-yellow-400">{name}</h2>
+              <h2 className="text-2xl font-semibold text-customBlue">{name}</h2>
               <button
                 onClick={closeModal}
                 className="text-lg font-bold text-white"
@@ -159,7 +159,7 @@ const TeamCard = ({ member }) => {
                 X
               </button>
             </div>
-            <p className="mt-4 text-white">{description}</p>
+            <p className="mt-4 text-gray-700 font-semibold">{description}</p>
           </div>
         </div>
       )}
