@@ -57,7 +57,7 @@ const Card = () => {
       {/* Card Section 2 */}
       <div className="bg-white rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
-          <h1 className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-roboto-slab text-center sm:text-left text-black capitalize">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-black capitalize">
             We work under your brand name
           </h1>
           <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-black">
