@@ -79,22 +79,22 @@ const Carousel = () => {
       title: "Tech Transformation",
       description:
         "A tech-focused fractional CFO tripled his client base in 8 months after offloading bookkeeping and FP&A to our team.",
-      titleColor: "text-white",
-      descriptionColor: "white",
+      titleColor: "text-yellow-400",
+      descriptionColor: "gray-100",
     },
     {
       title: "SaaS Supremacy",
       description:
         "A Frac. SaaS CFO shaved >100 hours a month off his workload, letting him focus on raising $20M in Series B funding for his client.",
-      titleColor: "text-white",
-      descriptionColor: "white",
+      titleColor: "text-yellow-400",
+      descriptionColor: "gray-100",
     },
     {
       title: "Professional Services Success",
       description:
-        "After automating their financial processes with us, a Fractional CFO saved $500K annually for their e-commerce client, boosting retention and profitability.",
-      titleColor: "text-white",
-      descriptionColor: "white",
+        "After automating financial processes, a Fractional CFO saved $500K annually for an e-commerce client, boosting retention and profitability.",
+      titleColor: "text-yellow-400",
+      descriptionColor: "gray-100",
     },
   ];
 
@@ -119,24 +119,30 @@ const Carousel = () => {
   };
 
   return (
-    <div className="bg-[#3c005a] py-10 px-2">
-      <div className="text-xl md:text-4xl font-roboto-slab leading-normal font-bold text-center text-white mb-10">
-        <h1 className="capitalize">
+    <div className="bg-customBlue py-10 px-20">
+      <div className="flex flex-col text-lg md:text-3xl lg:text-4xl font-roboto-slab leading-normal font-bold text-center text-white ">
+        <h1 className="capitalize leading-snug pb-2 lg:hidden">
           How We’ve Helped Fractional CFOs Across Industrial & Geographical
           Boundaries Succeed?
         </h1>
+        <h1 className="capitalize leading-snug hidden lg:block">
+          Industrial & Geographical Boundaries Succeed?
+        </h1>
+        <h1 className="capitalize leading-snug hidden lg:block">
+          How We’ve Helped Fractional CFOs Across
+        </h1>
       </div>
 
-      <div className="relative max-w-5xl mx-auto ">
-        <div className="flex justify-center ">
-          <div className="flex flex-col w-full max-w-lg px-4 text-center">
+      <div className="relative flex justify-center items-center w-full min-h-[23vh] sm:min-h-[25vh] mt-4">
+        <div className="flex justify-center items-center ">
+          <div className="flex flex-col sm:w-8/12 w-10/12 px-4 text-center   mx-4  ">
             <h1
-              className={`text-2xl font-bold ${data[currentIndex].titleColor} capitalize mb-4`}
+              className={`text-lg sm:text-2xl font-bold ${data[currentIndex].titleColor} capitalize mb-4 h-8 leading-[20px] `}
             >
               {data[currentIndex].title}
             </h1>
             <p
-              className={`text-lg text-${data[currentIndex].descriptionColor}`}
+              className={`text-sm sm:text-lg text-${data[currentIndex].descriptionColor}`}
             >
               {data[currentIndex].description}
             </p>
