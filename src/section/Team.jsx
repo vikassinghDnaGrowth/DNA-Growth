@@ -89,13 +89,29 @@ import avatar from "../assets/avtar.avif";
 const teamMembers = [
   {
     name: "Akshay Jain",
-    title: "Managing Director, DNA Growth",
-    description: `Akshay Jain is the Founder and Managing Director of DNA Growth, a pioneering Business and Financial Planning Organization operational in the US, Canada, Dubai, and India (30+ countries). With a cross-functional team of 150+ experts made up of highly experienced CFOs, controllers, FP&A specialists, and financial consultants, Jain is able to streamline and deliver a finance & analytics capability that propels organizations to achieve their goals and beyond. He holds a postgraduate degree in Finance and Financial Management Services from The Institute of Chartered Accountants of India. With 12+ years of experience in business and financial consulting, his vision is to be clients’ trusted partners in sustainable long-term growth. Jain is further associated with The Seed Transformation Program (STP) by Stanford’s Graduate School of Business.`,
+    title: "Managing Director & Founder, DNA Growth",
+    description: `Akshay Jain is the Founder and Managing Director of DNA Growth, a
+pioneering Business and Financial Planning Organization operational in the
+US, Canada, Dubai, and India (30+ countries). With a cross-functional team
+of 150+ experts made up of highly experienced CFOs, controllers, FP&A
+specialists, and financial consultants, Jain is able to streamline and deliver a
+finance & analytics capability that propels organizations to achieve their
+goals and beyond.
+He holds a postgraduate degree in Finance and Financial Management
+Services from The Institute of Chartered Accountants of India. With 12+
+years of experience in business and financial consulting, his vision is to be
+clients’ trusted partners in sustainable long-term growth. Jain is further
+associated with The Seed Transformation Program (STP) by Stanford’s
+Graduate School of Business.
+`,
   },
   {
     name: "Ishpreet Kaur Khanuja",
-    title: "FP&A Head",
-    description: `Ishpreet brings over 10 years of progressive experience in financial planning & analysis (FP&A), operations, and product management across diverse industries. As Head of FP&A at DNA Growth, she has a proven track record of driving significant improvements in financial performance and operational efficiency for global clients, especially D2C. Her expertise lies in Financial Data Management, Strategic Budgeting & Forecasting, and Analytics to guide business decisions and ensure financial well-being. Previously, she worked for Deloitte and Thomson Reuters, specializing in revenue and pipeline analysis, performance management reporting, and sales review analysis for the Middle East.`,
+    title: "VP of Finance",
+    description: `Ishpreet brings over 10 years of progressive experience in financial planning & analysis (FP&A), operations, and product management across diverse industries. As Head of FP&A at DNA Growth, she has a proven track record of driving significant improvements in financial performance and operational efficiency for global clients, especially D2C.
+
+Her expertise lies in Financial Data Management, Strategic Budgeting & Forecasting, and Analytics to guide business decisions and ensure financial well-being. Previously, she worked for Deloitte and Thomson Reuters, specializing in revenue and pipeline analysis, performance management reporting, and sales review analysis for the Middle East.
+`,
   },
   {
     name: "Gurvinder Singh",
@@ -105,7 +121,11 @@ const teamMembers = [
   {
     name: "Anuj",
     title: "Head of Finance",
-    description: `Anuj Bhushan is a seasoned finance professional with 11 years of experience in financial modeling, corporate strategy, and project management. As Manager of Finance at DNA Growth, he leads a team that delivers financial due diligence, models, and budgets for clients across various industries, including tech, pharma, and manufacturing. Anuj's previous roles included strategic advisory and financial management at PricewaterhouseCoopers and ICRA Analytics, where he provided regulatory and policy advisory to state utilities and public sector units. He holds an MBA in Finance from Xavier Institute of Management Bhubaneswar and a B.Tech in Electrical & Electronics Engineering from Kalinga Institute of Industrial Technology. Anuj combines technical expertise with solid business acumen to drive well-planned and strategic initiatives.`,
+    description: `
+Anuj Bhushan is a seasoned finance professional with 11 years of experience in financial modeling, corporate strategy, and project management. As Manager of Finance at DNA Growth, he leads a team that delivers financial due diligence, models, and budgets for clients across various industries, including tech, pharma, and manufacturing.
+
+Anuj's previous roles included strategic advisory and financial management at PricewaterhouseCoopers and ICRA Analytics, where he provided regulatory and policy advisory to state utilities and public sector units. He holds an MBA in Finance from Xavier Institute of Management Bhubaneswar and a B.Tech in Electrical & Electronics Engineering from Kalinga Institute of Industrial Technology. Anuj combines technical expertise with solid business acumen to drive well-planned and strategic initiatives.
+`,
   },
 ];
 
@@ -117,24 +137,24 @@ const TeamCard = ({ member }) => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="border-2 border-gray-500 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12 h-full  sm:min-h-[65vh] hover:bg-gray-800  hover:text-white">
-      <div className="flex justify-center mb-4">
+    <div className="border-2 border-gray-700 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12    hover:bg-white   hover:text-black  relative">
+      <div className="flex justify-center mb-4 absolute sm:static  -top-[16%] sm:-top-0  ">
         <img
           src={avatar}
           alt={`${name}'s avatar`}
-          className="w-1/4 md:w-9/12 rounded-full"
+          className="w-1/4 md:w-9/12 rounded-full  "
         />
       </div>
-      <div className="flex flex-col items-center mb-2 text-center px-2">
-        <h1 className="text-xl md:text-2xl">{name}</h1>
-        <p className="text-sm md:text-lg  ">({title})</p>
+      <div className="flex flex-col items-center mb-2 text-center px-2 pt-10 sm:pt-0">
+        <h1 className="text-lg mb-2 font-semibold text-customBlue">{name}</h1>
+        <p className="text-sm font-semibold  text-black">{title}</p>
       </div>
-      <div className="flex justify-between p-4 w-full  ">
-        <p className="text-xs md:text-sm">{description.substring(0, 100)}...</p>
+      <div className="flex justify-center p-4 w-full   ">
+        <p className="text-sm text-black">{description.substring(0, 100)}...</p>
       </div>
       <button
         onClick={openModal}
-        className="mt-2 text-white underline text-xs md:text-sm "
+        className="mt-2  underline text-xs md:text-sm text-customBlue"
       >
         Read More
       </button>
@@ -169,14 +189,14 @@ const TeamCard = ({ member }) => {
 
 const Team = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-customBlue py-10 ">
+    <div className="w-full flex flex-col items-center bg-gray-300 py-10 ">
       <div className="w-full flex sm:flex-row flex-col gap-2 justify-around ">
-        <div className="w-full sm:w-2/12 lg:w-1/12 flex justify-center items-center   ">
-          <h1 className="sm:-rotate-90 text-4xl sm:text-5xl md:text-7xl font-semibold text-white font-roboto-slab text-nowrap   mb-6 sm:mb-0">
+        <div className="w-full sm:w-2/12 lg:w-1/12 flex justify-center items-center  ">
+          <h1 className="sm:-rotate-90 pb-16 sm:pb-0 text-4xl sm:text-5xl md:text-7xl font-semibold text-black font-roboto-slab text-nowrap   mb-6 sm:mb-0">
             Meet Our Team
           </h1>
         </div>
-        <div className="w-full sm:w-8/12  gap-6 sm:gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-customBlue justify-items-center ">
+        <div className="w-full sm:w-8/12  gap-20 sm:gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-transparent justify-items-center ">
           {teamMembers.map((member, index) => (
             <TeamCard key={index} member={member} />
           ))}
