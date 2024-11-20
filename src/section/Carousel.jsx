@@ -80,21 +80,21 @@ const Carousel = () => {
       description:
         "A tech-focused fractional CFO tripled his client base in 8 months after offloading bookkeeping and FP&A to our team.",
       titleColor: "text-yellow-400",
-      descriptionColor: "gray-100",
+      descriptionColor: "white",
     },
     {
       title: "SaaS Supremacy",
       description:
         "A Frac. SaaS CFO shaved >100 hours a month off his workload, letting him focus on raising $20M in Series B funding for his client.",
       titleColor: "text-yellow-400",
-      descriptionColor: "gray-100",
+      descriptionColor: "white",
     },
     {
       title: "Professional Services Success",
       description:
         "After automating financial processes, a Fractional CFO saved $500K annually for an e-commerce client, boosting retention and profitability.",
       titleColor: "text-yellow-400",
-      descriptionColor: "gray-100",
+      descriptionColor: "white",
     },
   ];
 
