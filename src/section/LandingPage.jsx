@@ -49,13 +49,13 @@ const LandingPage = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="w-full  flex flex-col ">
+    <div className="w-full  flex flex-col">
       {/* Top section with image */}
-      <div className="w-full h-full flex items-center justify-center overflow-hidden">
+      <div className="w-full   flex items-center justify-center overflow-hidden">
         <img
           src={landingpage}
           alt="Landing Page Visual"
-          className="object-cover w-full "
+          className="object-cover w-full h-full   "
         />
       </div>
     </div>
