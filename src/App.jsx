@@ -11,7 +11,7 @@ import Card from "./section/Card";
 import Team from "./section/Team";
 import Stepper from "./section/Stepper";
 import Testimonial from "./section/Testimonial";
-
+import GsapTest from "./section/GsapTest";
 
 const App = () => {
   return (
@@ -29,6 +29,8 @@ const App = () => {
       <Testimonial />
       <Header />
       {/* <Services /> */}
+      {/* <GsapTest/> */}
+
     </>
   );
 };
