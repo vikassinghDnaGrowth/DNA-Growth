@@ -11,13 +11,13 @@ import Card from "./section/Card";
 import Team from "./section/Team";
 import Stepper from "./section/Stepper";
 import Testimonial from "./section/Testimonial";
-import GsapTest from "./section/GsapTest";
+// import GsapTest from "./section/GsapTest";
 
 const App = () => {
   return (
     <>
       {/* <GsapTest/> */}
-      {/* <Navbar /> */}
+      {/* <Navbar />/ */}
       <LandingPage />
       <Stepper />
       <Card />
@@ -25,9 +25,9 @@ const App = () => {
       <WhyUs />
       <Carousel />
       <Team />
-      <ContactForm />
-      <Testimonial />
       <Header />
+      <Testimonial />
+      <ContactForm />
       {/* <Services /> */}
       {/* <GsapTest/> */}
 

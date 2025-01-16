@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
         'roboto-slab': ['Roboto Slab', 'serif'],
+        'arimo':['Arimo','ital']
       },
       animation: {
         scaleUp: 'scaleUp 1s ease forwards',

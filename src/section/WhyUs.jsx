@@ -1,14 +1,14 @@
-import React from "react";
-import tech from "../assets/tech.jpg";
-import Reducecost from "../assets/Reducecost.jpg";
-import focusOnStrategy from "../assets/focusOnStrategy.jpg";
-import doubleCients from "../assets/doubleCients.jpg";
-import DataClarity from "../assets/DataClarity.jpg";
+// import React from "react";
+import tech from "../assets/No more.jpg";
+import Reducecost from "../assets/2X Clients.jpg";
+import focusOnStrategy from "../assets/Focus on Strategy.jpg";
+import doubleCients from "../assets/Cut Your Costs by.jpg";
+import DataClarity from "../assets/Custom Tech Integration.jpg";
 
 const WhyUs = () => {
   const Data = [
     {
-      image: tech,
+      image: doubleCients,
       title: "Cut Your Costs by ∼50%",
       description:
         "You don’t need to spend on a full in-house team. We give you the power of 150+ finance and tech experts, and you only pay for what you need. Scale up or down at your will.",
@@ -26,13 +26,13 @@ const WhyUs = () => {
         "Free up your (& your team’s) time to help your clients grow. We’ll handle everything from basic bookkeeping to complex financial analysis & planning.",
     },
     {
-      image: doubleCients,
+      image: DataClarity,
       title: "Custom Tech Integration",
       description:
         "From Sage Intacct, Python, FathomHQ to QBO, NetSuite, we streamline and upgrade your existing tech stack so it works for you—not the other way around.",
     },
     {
-      image: DataClarity,
+      image: tech,
       title: "No More Fire Drill, Only Clarity",
       description:
         "With our proactive financial reporting and automated workflows, you’ll always have the right data, right when you need it. No scrambling.",
@@ -40,9 +40,9 @@ const WhyUs = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-10 w-full  bg-gray-100">
+    <div className="flex flex-col items-center py-6 w-full  bg-white">
       <div className="w-full  text-center sm:pb-6 pb-4 flex flex-col">
-        <h3 className="text-lg md:text-4xl font-bold  capitalize px-2  hidden sm:block">
+        <h3 className="text-lg md:text-4xl font-bold font-montserrat  capitalize px-2  hidden sm:block">
           Why Fractional CFOs Love Working with Us ?
         </h3>
         <span className="sm:hidden text-lg md:text-4xl font-bold  capitalize px-2">
@@ -58,12 +58,12 @@ const WhyUs = () => {
           {Data.slice(0, 2).map((item, index) => (
             <div
               key={index}
-              className="border-2 border-gray-200 shadow-xl rounded-lg p-4 h-full flex flex-col"
+              className="border-2 border-gray-200 shadow-xl rounded-lg p-4 min-h-96 flex flex-col"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-40 w-full object-cover mb-4"
+                className="h-52 w-full object-cover mb-4"
               />
               <h4 className="text-lg font-semibold capitalize">{item.title}</h4>
               <p className="text-gray-600 ">{item.description}</p>
@@ -89,12 +89,12 @@ const WhyUs = () => {
           {Data.slice(3, 5).map((item, index) => (
             <div
               key={index}
-              className="border-2 border-gray-200 shadow-xl rounded-lg p-4 h-full flex flex-col"
+              className="border-2 border-gray-200 shadow-xl rounded-lg p-4 min-h-96 flex flex-col"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-40 w-full object-cover mb-4"
+                className="h-56 w-full object-cover mb-4 "
               />
               <h4 className="text-lg font-semibold capitalize ">
                 {item.title}

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import  { useState } from "react";
+import test from "../assets/bg.jpg";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,29 +27,29 @@ const ContactForm = () => {
       // Reset form after submission
       setFormData({ name: "", email: "", contactNumber: "", message: "" });
     } catch (submissionError) {
-      setError("An error occurred while submitting the form.");
+      setError("An error occurred while submitting the form.",submissionError);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="flex justify-center items-center w-full bg-[#226ba7] py-10">
-      <div className="w-full sm:w-9/12 lg:w-6/12 px-6 rounded-lg">
-        <h1 className="text-2xl md:text-4xl text-center text-white font-bold font-roboto-slab uppercase">
+    <div className="flex justify-start items-center   w-full  py-10" style={{ backgroundImage: `url(${test})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat' , }}>
+      <div className="w-full sm:w-9/12 lg:w-6/12  px-6 rounded-lg ">
+        <h1 className="text-2xl md:text-4xl text-center text-black font-bold font-roboto-slab uppercase">
           Get In Touch
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="shadow-lg shadow-gray-700 p-6 rounded-lg mt-16"
+          className="shadow-lg shadow-gray-700 p-6 mt-2 rounded-lg  "
         >
           {error && (
             <p className="text-red-600" aria-live="polite">
               {error}
             </p>
           )}
-          <div className="mb-6">
-            <label className="block text-white" htmlFor="name">
+          <div className="mb-3">
+            <label className="block text-black" htmlFor="name">
               Name*
             </label>
             <input
@@ -59,12 +59,12 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className="mt-1 block w-full p-2 border border-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              className="mt-1 block w-full p-2  rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
               required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-white" htmlFor="email">
+          <div className="mb-3">
+            <label className="block text-black" htmlFor="email">
               Email*
             </label>
             <input
@@ -74,12 +74,12 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="mt-1 block w-full p-2 border border-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              className="mt-1 block w-full p-2  rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
               required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-white" htmlFor="contactNumber">
+          <div className="mb-3">
+            <label className="block text-black" htmlFor="contactNumber">
               Contact Number
             </label>
             <input
@@ -89,12 +89,12 @@ const ContactForm = () => {
               value={formData.contactNumber}
               onChange={handleChange}
               placeholder="Enter your contact number"
-              className="mt-1 block w-full p-2 border border-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              className="mt-1 block w-full p-2  rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
               required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-white" htmlFor="message">
+          <div className="mb-3">
+            <label className="block text-black" htmlFor="message">
               Message
             </label>
             <textarea
@@ -103,14 +103,14 @@ const ContactForm = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Type your message here"
-              className="mt-1 block w-full p-2 border border-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              className="mt-1 block w-full p-2 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
               required
             />
           </div>
           <div className="flex justify-center items-center">
             <button
               type="submit"
-              className="bg-white text-black text-lg py-2 px-12 rounded-xl hover:bg-blue-600 transition duration-200"
+              className="bg-white text-black text-lg py-2 px-12 rounded-xl hover:bg-yellow-400 hover:text-white transition duration-200"
               disabled={loading}
             >
               {loading ? "Submitting..." : "Submit"}

@@ -1,9 +1,9 @@
-import React from "react";
+
 import { FcApproval } from "react-icons/fc";
 
 const CFO = () => {
   return (
-    <div className="w-full flex justify-center bg-gray-300 py-10">
+    <div className="w-full flex justify-center bg-[rgb(251,253,255)] py-10 ">
       <div className="w-full max-w-7xl  px-4">
         {/* Heading Section */}
         <div className="flex sm:justify-center justify-start items-center  pb-6">
@@ -32,7 +32,8 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Financial Planning and Analytics (Goal Setting/ Budgeting/ Financial Modeling)
+                Financial Planning and Analytics (Goal Setting/ Budgeting/
+                Financial Modeling)
               </li>
               <li className="flex ">
                 <span className="pt-1 mr-4">
@@ -67,13 +68,15 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Business Intelligence- Visualizations / Dashboards / MIS (PowerBI, Tableau, FathomHQ, Gsheets)
+                Business Intelligence- Visualizations / Dashboards / MIS
+                (PowerBI, Tableau, FathomHQ, Gsheets)
               </li>
               <li className="flex  ">
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Automation (Full ETL, Rippling, Python, REST APIs, Zapier, G-Accon)
+                Automation (Full ETL, Rippling, Python, REST APIs, Zapier,
+                G-Accon)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">
@@ -85,7 +88,8 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                Business Intelligence- Visualizations / Dashboards / MIS (PowerBI, Tableau, FathomHQ, Gsheets)
+                Business Intelligence- Visualizations / Dashboards / MIS
+                (PowerBI, Tableau, FathomHQ, Gsheets)
               </li>
               <li className="flex ">
                 <span className="pt-1 mr-4">
@@ -108,13 +112,15 @@ const CFO = () => {
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                ERP and Accounting Implementation + Maintenance (NetSuite, QBO, Xero, Zoho, Sage QBD etc)
+                ERP and Accounting Implementation + Maintenance (NetSuite, QBO,
+                Xero, Zoho, Sage QBD etc)
               </li>
               <li className="flex ">
                 <span className="pt-1 mr-4">
                   <FcApproval />
                 </span>
-                AR/AP, Invoicing, Payroll, Reconciliation (Bill.com, Chargebee, Gusto, Justworks, ADP etc)
+                AR/AP, Invoicing, Payroll, Reconciliation (Bill.com, Chargebee,
+                Gusto, Justworks, ADP etc)
               </li>
               <li className="flex">
                 <span className="pt-1 mr-4">

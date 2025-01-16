@@ -1,26 +1,16 @@
-import React from "react";
-import bgImage from "../assets/flags/image.jpg";
-import image1 from "../assets/web-design-vector.png";
-import image2 from "../assets/cash-flow-management-for-businesses.png";
-import image3 from "../assets/download-removebg-preview.png";
+import image1 from "../assets/1_technology.jpg";
+import image2 from "../assets/new_ui_design_51.jpg";
+import image3 from "../assets/ui_icon_634.jpg";
 
 const Card = () => {
   return (
-    <div
-      className="w-full flex flex-col gap-8 items-center justify-center py-10"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="w-full flex flex-col gap-8 items-center justify-center py-10">
       <div className="flex flex-col justify-start sm:justify-center items-center text-center px-4 sm:px-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl pb-2 font-bold text-white font-roboto-slab capitalize">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl pb-2 font-bold text-customBlue font-roboto-slab capitalize">
           DNA Growth Has Your Back (and Your Brand’s)
         </h1>
-        <p className="text-base sm:text-lg lg:text-xl md:text-yellow-300 text-white pt-2 sm:px-10">
-          <span className="text-lg sm:text-xl text-slate-100">
+        <p className="text-base sm:text-lg lg:text-xl md:text-[#080808] text-white pt-2 sm:px-10">
+          <span className="text-lg sm:text-xl text-[#AE2664]">
             Our White-Label CFO Support Has One Goal:{" "}
           </span>
           To make You one-stop support for Your Clients & Build Better Business
@@ -35,7 +25,7 @@ const Card = () => {
       </div>
 
       {/* Card Section 1 */}
-      <div className="bg-[#3c005a] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center  ">
+      <div className="bg-[rgb(201,63,108)] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center  ">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center sm:text-left capitalize">
             We do the ‘grunt’ work
@@ -55,12 +45,12 @@ const Card = () => {
       </div>
 
       {/* Card Section 2 */}
-      <div className="bg-white rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
+      <div className="bg-[rgb(239,197,0)] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-black capitalize">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We work under your brand name
           </h1>
-          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-black">
+          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-white">
             Our white-label services mean we’re invisible to your clients (as
             long as you wish), but the impact we make? That’s loud & clear.
           </p>
@@ -75,7 +65,7 @@ const Card = () => {
       </div>
 
       {/* Card Section 3 */}
-      <div className="bg-customBlue rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
+      <div className="bg-[rgb(61,145,207)] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
         <div className="flex-1 flex flex-col justify-center items-start p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We plug into your tech stack

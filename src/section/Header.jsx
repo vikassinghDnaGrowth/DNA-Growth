@@ -1,4 +1,4 @@
-import React from "react";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all"; // Ensure ScrollTrigger is imported here
 import { useGSAP } from "@gsap/react";
@@ -20,7 +20,7 @@ const Header = () => {
       scrollTrigger: {
         trigger: ".checkmark",
         start: "top 85%",
-        end: "top 35%",
+        end: "top 55%",
         scrub: true,
       },
     });
