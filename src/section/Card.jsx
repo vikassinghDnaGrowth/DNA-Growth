@@ -4,13 +4,13 @@ import image3 from "../assets/ui_icon_634.jpg";
 
 const Card = () => {
   return (
-    <div className="w-full flex flex-col gap-8 items-center justify-center py-10">
+    <div className="w-full flex flex-col gap-8 items-center justify-center py-10 ">
       <div className="flex flex-col justify-start sm:justify-center items-center text-center px-4 sm:px-8">
         <h1 className="text-2xl sm:text-3xl md:text-4xl pb-2 font-bold text-customBlue font-roboto-slab capitalize">
           DNA Growth Has Your Back (and Your Brand’s)
         </h1>
         <p className="text-base sm:text-lg lg:text-xl md:text-[#080808] text-white pt-2 sm:px-10">
-          <span className="text-lg sm:text-xl text-[#AE2664]">
+          <span className="text-lg sm:text-xl text-[rgb(22,103,161)]">
             Our White-Label CFO Support Has One Goal:{" "}
           </span>
           To make You one-stop support for Your Clients & Build Better Business

@@ -7,21 +7,21 @@ const Carousel = () => {
       title: "Tech Transformation",
       description:
         "A tech-focused fractional CFO tripled his client base in 8 months after offloading bookkeeping and FP&A to our team.",
-      titleColor: "text-yellow-400",
+      titleColor: "text-[rgb(185,22,128)]",
       descriptionColor: "black",
     },
     {
       title: "SaaS Supremacy",
       description:
         "A Frac. SaaS CFO shaved >100 hours a month off his workload, letting him focus on raising $20M in Series B funding for his client.",
-      titleColor: "text-yellow-400",
+      titleColor: "text-[rgb(22,103,161)]",
       descriptionColor: "black",
     },
     {
       title: "Professional Services Success",
       description:
         "After automating financial processes, a Fractional CFO saved $500K annually for an e-commerce client, boosting retention and profitability.",
-      titleColor: "text-yellow-400",
+      titleColor: "text-[rgb(101,1,119)]",
       descriptionColor: "black",
     },
   ];
@@ -47,7 +47,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="bg-[rgb(239,245,250)] py-10 px-20">
+    <div className="bg-[rgb(251,253,255)] py-10 px-20">
       <div className="flex flex-col text-lg md:text-3xl lg:text-4xl font-roboto-slab leading-normal font-bold text-center text-customBlue ">
         <h1 className="capitalize leading-snug pb-2 lg:hidden">
           How We’ve Helped Fractional CFOs Across Industrial & Geographical

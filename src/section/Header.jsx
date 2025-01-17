@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/all"; // Ensure ScrollTrigger is imported he
 import { useGSAP } from "@gsap/react";
 import { GiCheckMark } from "react-icons/gi";
 
-import image from "../assets/image.png";
+import image from "../assets/DNABdays_Jan 2025 (2).png";
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,31 +79,31 @@ const Header = () => {
   });
 
   return (
-    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-customBlue ">
+    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-white  ">
       <div className="w-full lg:w-11/12 flex  md:flex-row flex-col justify-between gap-4">
         <div className="flex flex-col justify-center p-4 md:w-6/12  w-full ">
-          <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-bold text-white  capitalize gap-4 lg:text-nowrap ">
+          <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-bold text-black  capitalize gap-4 lg:text-nowrap ">
             <div className="flex gap-6">
-              <span className="checkmark text-2xl md:text-4xl font-bold text-green-600">
+              <span className="checkmark text-2xl md:text-4xl font-bold text-[rgb(22,103,161)]">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Double your clientele</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark text-2xl md:text-4xl font-bold  text-green-600">
+              <span className="checkmark text-2xl md:text-4xl font-bold  text-[rgb(22,103,161)]">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Deliver more value to your clients</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark text-2xl md:text-4xl font-bold  text-green-600">
+              <span className="checkmark text-2xl md:text-4xl font-bold  text-[rgb(22,103,161)]">
                 <GiCheckMark />
               </span>
               <h1 className="h1">Free up your time for strategic work</h1>
             </div>
           </div>
-          <p className="py-8 text-lg md:text-md text-white discription">
-            <span className="pr-2 text-green-400 md:font-medium ">
+          <p className="py-8 text-lg md:text-md text-black discription">
+            <span className="pr-2 text-[rgb(22,103,161)] md:font-medium ">
               DNA Growth
             </span>
             is a leader in Accounting, Finance, and Automation Solutions for the
@@ -111,7 +111,7 @@ const Header = () => {
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-          <button className="sm:w-1/2  w-full rounded-xl  px-[8px] py-[6px] bg-white text-black border-2 border-black text-md font-semibold  ">
+          <button className="sm:w-1/2  w-full rounded-xl  px-[8px] py-[6px] bg-[rgb(22,103,161)] text-white  text-md font-semibold  ">
             Explore Our Services
           </button>
           {/* //{" "}
@@ -119,12 +119,12 @@ const Header = () => {
             // Let’s Level Up Your practice //{" "}
           </button> */}
         </div>
-        <div className="flex w-full justify-center items-center md:w-6/12 ">
-          <div className="flex w-[80%] justify-center items-center rounded-3xl bg-gray-300 p-4 ">
+        <div className="flex w-full justify-center items-center md:w-6/12     ">
+          <div className="flex w-[80%] justify-center items-center  p-4 ">
             <img
               src={image}
               alt="HeaderImg"
-              className=" image w-[100%] h-auto  shadow-2xl shadow-black object-cover rounded-3xl  "
+              className=" image w-[100%] h-auto  object-cover rounded-3xl  "
             />
           </div>
         </div>

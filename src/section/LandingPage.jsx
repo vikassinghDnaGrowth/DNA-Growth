@@ -6,13 +6,13 @@ import langingPageImg from "../assets/langingPage.jpg";
 // import landingpage from "../assets/landingpage.gif";
 const LandingPage = () => {
   return (
-    <div className="w-full bg-white lg:h-screen h-auto md:pb-10  text-black">
+    <div className="w-full max-h-[80vh] bg-white lg:h-screen h-auto md:pb-10  text-black">
       <div className="w-full flex flex-col md:flex-row justify-center items-center h-full gap-4 ">
         <div className="md:w-9/12 w-10/12   flex gap-4 flex-col items-center justify-center h-full  ">
           <div className="md:w-8/12 mt-6 ">
             <header className="text-md md:text-2xl   ">
               <div className="text-2xl font-montserrat font-bold">
-                <span className=" text-[rgb(185,22,128)]  ">SPEED.</span>{" "}
+                <span className=" text-[rgb(185,22,128)] ">SPEED.</span>{" "}
                 <span className="text-[rgb(22,103,161)]"> SUCCESS.</span>{" "}
                 <span className="text-[rgb(101,1,119)]">SCALE.</span>
                 {/* <img className="" src={landingPage} alt="" /> */}

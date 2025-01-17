@@ -7,7 +7,7 @@ const CFO = () => {
       <div className="w-full max-w-7xl  px-4">
         {/* Heading Section */}
         <div className="flex sm:justify-center justify-start items-center  pb-6">
-          <h1 className="text-2xl sm:text-4xl font-semibold font-roboto-slab  text-center capitalize">
+          <h1 className="text-2xl sm:text-4xl font-semibold font-roboto-slab text-[rgb(22,103,161)]  text-center capitalize">
             We Bring Everything to Your CFO Office
           </h1>
         </div>
@@ -15,7 +15,7 @@ const CFO = () => {
         {/* Card Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Strategic CFO Support Card */}
-          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(170,216,248)] ">
             <div className="flex justify-start">
               <h4 className="text-xl sm:text-3xl font-roboto-slab pb-6 capitalize">
                 Strategic CFO Support
@@ -57,7 +57,7 @@ const CFO = () => {
           </div>
 
           {/* CFO Tech and Automation Card */}
-          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(170,216,248)]">
             <div className="flex justify-start">
               <h1 className="text-xl sm:text-3xl font-roboto-slab pb-6 capitalize">
                 CFO Tech and Automation
@@ -101,7 +101,7 @@ const CFO = () => {
           </div>
 
           {/* Accounting and Controller Card */}
-          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-white">
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(170,216,248)]">
             <div className="flex justify-start">
               <h1 className="text-xl sm:text-3xl font-roboto-slab pb-6 capitalize">
                 Accounting and Controller
