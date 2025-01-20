@@ -6,14 +6,14 @@ const Card = () => {
   return (
     <div className="w-full flex flex-col gap-8 items-center justify-center py-10 ">
       <div className="flex flex-col justify-start sm:justify-center items-center text-center px-4 sm:px-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl pb-2 font-bold text-customBlue font-roboto-slab capitalize">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl pb-2 font-bold text-[#C93F6C] font-roboto-slab capitalize">
           DNA Growth Has Your Back (and Your Brand’s)
         </h1>
         <p className="text-base sm:text-lg lg:text-xl md:text-[#080808] text-white pt-2 sm:px-10">
-          <span className="text-lg sm:text-xl text-[rgb(22,103,161)]">
+          <span className="text-lg sm:text-xl text-black font-bold">
             Our White-Label CFO Support Has One Goal:{" "}
           </span>
-          To make You one-stop support for Your Clients & Build Better Business
+          To make you one-stop support for your clients & build better business
           for you. <br />
           When you have DNA Growth in your team, you’re not just outsourcing
           finance tasks—you’re gaining a full team of 150+ experts (including

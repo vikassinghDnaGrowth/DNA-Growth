@@ -42,7 +42,7 @@ const WhyUs = () => {
   return (
     <div className="flex flex-col items-center py-6 w-full  bg-white">
       <div className="w-full  text-center sm:pb-6 pb-4 flex flex-col">
-        <h3 className="text-lg md:text-4xl font-bold font-montserrat  capitalize px-2  hidden sm:block">
+        <h3 className="text-lg pb-3 text-[rgb(22,103,161)] md:text-4xl font-bold font-montserrat  capitalize px-2  hidden sm:block">
           Why Fractional CFOs Love Working with Us ?
         </h3>
         <span className="sm:hidden text-lg md:text-4xl font-bold  capitalize px-2">

@@ -1,9 +1,8 @@
-
 import { FcApproval } from "react-icons/fc";
 
 const CFO = () => {
   return (
-    <div className="w-full flex justify-center bg-[rgb(251,253,255)] py-10 ">
+    <div className="w-full h-auto py-8 flex justify-center bg-[rgb(251,253,255)]  ">
       <div className="w-full max-w-7xl  px-4">
         {/* Heading Section */}
         <div className="flex sm:justify-center justify-start items-center  pb-6">
@@ -15,13 +14,13 @@ const CFO = () => {
         {/* Card Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Strategic CFO Support Card */}
-          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(170,216,248)] ">
+          <div className="flex flex-col border-2 border-gray-200 p-6  rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(136,169,192)] hover:text-white  ">
             <div className="flex justify-start">
               <h4 className="text-xl sm:text-3xl font-roboto-slab pb-6 capitalize">
                 Strategic CFO Support
               </h4>
             </div>
-            <ul className="list-none space-y-4">
+            <ul className="list-none space-y-4 text-md">
               <li className="flex">
                 <span className="pt-1 mr-4">
                   <FcApproval />
@@ -57,13 +56,13 @@ const CFO = () => {
           </div>
 
           {/* CFO Tech and Automation Card */}
-          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(170,216,248)]">
+          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(136,169,192)] hover:text-white  ">
             <div className="flex justify-start">
               <h1 className="text-xl sm:text-3xl font-roboto-slab pb-6 capitalize">
                 CFO Tech and Automation
               </h1>
             </div>
-            <ul className="list-none space-y-4">
+            <ul className="list-none space-y-4 text-md">
               <li className="flex ">
                 <span className="pt-1 mr-4">
                   <FcApproval />
@@ -84,30 +83,17 @@ const CFO = () => {
                 </span>
                 Integrations (CRM, ERP, Payment Gateways, HRMS, BI Tools etc)
               </li>
-              <li className="flex ">
-                <span className="pt-1 mr-4">
-                  <FcApproval />
-                </span>
-                Business Intelligence- Visualizations / Dashboards / MIS
-                (PowerBI, Tableau, FathomHQ, Gsheets)
-              </li>
-              <li className="flex ">
-                <span className="pt-1 mr-4">
-                  <FcApproval />
-                </span>
-                Integrations (CRM, ERP, Payment Gateways, HRMS, BI Tools etc)
-              </li>
             </ul>
           </div>
 
           {/* Accounting and Controller Card */}
-          <div className="flex flex-col border-2 border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(170,216,248)]">
+          <div className="flex flex-col border-2  border-gray-200 p-6 rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(136,169,192)] hover:text-white hover:text-md ">
             <div className="flex justify-start">
               <h1 className="text-xl sm:text-3xl font-roboto-slab pb-6 capitalize">
                 Accounting and Controller
               </h1>
             </div>
-            <ul className="list-none space-y-4">
+            <ul className="list-none space-y-4 text-md">
               <li className="flex ">
                 <span className="pt-1 mr-4">
                   <FcApproval />

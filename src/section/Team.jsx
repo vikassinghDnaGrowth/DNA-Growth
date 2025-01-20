@@ -55,7 +55,7 @@ const TeamCard = ({ member }) => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="border-2 border-gray-700 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12    hover:bg-[rgb(167,202,236)] hover:scale-105 transform duration-300  relative">
+    <div className="border-2 border-gray-700 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12      hover:text-white hover:bg-[rgb(169,43,101)]   relative">
       <div className="flex justify-center mb-4 absolute sm:static  -top-[16%] sm:-top-0  ">
         <img
           src={avatar}
@@ -110,7 +110,7 @@ const Team = () => {
     <div className="w-full flex flex-col items-center bg-white py-10 ">
       <div className="w-full flex sm:flex-row flex-col gap-2 justify-around ">
         <div className="w-full sm:w-2/12 lg:w-1/12 flex justify-center items-center  ">
-          <h1 className="sm:-rotate-90 pb-16 sm:pb-0 text-4xl sm:text-5xl md:text-7xl font-semibold text-[rgb(22,103,161)] font-roboto-slab text-nowrap   mb-6 sm:mb-0">
+          <h1 className="sm:-rotate-90 pb-16 sm:pb-0 text-4xl sm:text-5xl md:text-6xl font-semibold text-[rgb(22,103,161)] font-roboto-slab text-nowrap   mb-6 sm:mb-0">
             Meet Our Team
           </h1>
         </div>

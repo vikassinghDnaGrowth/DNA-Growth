@@ -38,7 +38,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-white py-10 p-4 ">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-[rgb(251,253,255)] pb-12 pt-8  ">
       {/* Left Side: Carousel */}
       <div className="w-full md:w-5/12 mb-8 md:mb-0  rounded-lg  bg-black  p-4 m-4">
         <div className="relative max-w-4xl mx-auto">
@@ -83,7 +83,9 @@ const Testimonial = () => {
       {/* Right Side: Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-4 capitalize text-black">
         <div>
-          <p className="italic text-yellow-500 font-montserrat font-bold">YOUR SUCCESS IS OUR PRIDE</p>
+          <p className="italic text-yellow-500 font-montserrat font-bold">
+            YOUR SUCCESS IS OUR PRIDE
+          </p>
           <h1 className="text-lg md:text-3xl font-bold text-[rgb(22,103,161)] mb-6 text-left">
             HEAR FROM OUR HAPPY fRAC. CFO FAMILY
           </h1>

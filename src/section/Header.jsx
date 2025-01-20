@@ -70,7 +70,7 @@ const Header = () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".image",
-          start: "top 85%", // Start the animation when the image reaches 75% from top of the viewport
+          start: "top 95%", // Start the animation when the image reaches 75% from top of the viewport
           end: "top 35%", // End when the bottom of the image reaches the top of the viewport
           scrub: true,
         },
@@ -81,29 +81,29 @@ const Header = () => {
   return (
     <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-white  ">
       <div className="w-full lg:w-11/12 flex  md:flex-row flex-col justify-between gap-4">
-        <div className="flex flex-col justify-center p-4 md:w-6/12  w-full ">
-          <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-bold text-black  capitalize gap-4 lg:text-nowrap ">
+        <div className="flex flex-col justify-center p-4 md:w-5/12  w-full  ">
+          <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-semibold text-black  capitalize gap-4 lg:text-nowrap ">
             <div className="flex gap-6">
               <span className="checkmark text-2xl md:text-4xl font-bold text-[rgb(22,103,161)]">
                 <GiCheckMark />
               </span>
-              <h1 className="h1">Double your clientele</h1>
+              <h1 className="h1 text-2xl">Double your clientele</h1>
             </div>
             <div className="flex gap-6">
               <span className="checkmark text-2xl md:text-4xl font-bold  text-[rgb(22,103,161)]">
                 <GiCheckMark />
               </span>
-              <h1 className="h1">Deliver more value to your clients</h1>
+              <h1 className="h1 text-2xl">Deliver more value to your clients</h1>
             </div>
             <div className="flex gap-6">
               <span className="checkmark text-2xl md:text-4xl font-bold  text-[rgb(22,103,161)]">
                 <GiCheckMark />
               </span>
-              <h1 className="h1">Free up your time for strategic work</h1>
+              <h1 className="h1  text-2xl">Free up your time for strategic work</h1>
             </div>
           </div>
-          <p className="py-8 text-lg md:text-md text-black discription">
-            <span className="pr-2 text-[rgb(22,103,161)] md:font-medium ">
+          <p className="py-8 text-lg md:text-lg text-black discription">
+            <span className="pr-2 text-[rgb(22,103,161)] text-lg ">
               DNA Growth
             </span>
             is a leader in Accounting, Finance, and Automation Solutions for the
@@ -111,7 +111,7 @@ const Header = () => {
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-          <button className="sm:w-1/2  w-full rounded-xl  px-[8px] py-[6px] bg-[rgb(22,103,161)] text-white  text-md font-semibold  ">
+          <button className="sm:w-1/2  w-full rounded-xl  px-[8px] py-[11px] bg-[rgb(22,103,161)] text-white  text-xl font-semibold  ">
             Explore Our Services
           </button>
           {/* //{" "}

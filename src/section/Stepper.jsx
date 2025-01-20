@@ -70,11 +70,11 @@ const Stepper = () => {
 
   return (
     <div
-      className="bg-[rgb(251,253,255)] text-white w-full py-10 md:px-24 px-6"
+      className="bg-[rgb(251,253,255)] text-white w-full py-10 md:px-24 px-6 "
       ref={containerRef}
     >
       <div className="md:-ml-10 pb-12 md:pl-0 sm:pl-12 pl-4">
-        <h1 className="font-roboto-slab text-2xl md:text-4xl md:pb-4 pb-2 text-customBlue font-semibold">
+        <h1 className="font-roboto-slab text-2xl md:text-4xl md:pb-4 pb-2 text-[rgb(22,103,161)]  font-semibold">
           We Get It—It’s Tough Out There
         </h1>
         {/* <h1 className="font-roboto-slab text-2xl md:text-4xl text-customBlue font-semibold">
@@ -82,20 +82,20 @@ const Stepper = () => {
         </h1> */}
       </div>
       <div className="flex sm:pl-14 md:pl-0 pl-6">
-        <div className="w-full border-l-2 border-gray-300">
-          <div className="w-full md:9/12 flex flex-col transform -translate-x-[0.4%] sm:-translate-x-[0.2%]">
+        <div className="w-full border-l-2 border-white">
+          <div className=" w-full md:9/12 flex flex-col transform -translate-x-[0.4%] sm:-translate-x-[0.2%]">
             {data.map((item, index) => (
               <div
                 key={index}
-                className={`border-l-2 md:pb-8 border-customBlue flex service-item service-item-${index}`}
+                className={`border-l-2 md:pb-8  border-[rgb(239,197,9)] flex service-item service-item-${index}`}
               >
                 {/* Circle with the step number */}
-                <div className="flex items-center justify-center w-10 h-10 p-4 border-2 border-white text-white bg-[rgb(22,103,161)] rounded-full transform -translate-x-[55%]">
+                <div className="flex items-center text-xl font-semibold justify-center w-10 h-10 p-4 border-2 border-white text-black  bg-[rgb(239,197,9)] rounded-full transform -translate-x-[55%]">
                   {index + 1}
                 </div>
 
                 {/* Step content */}
-                <div className="md:ml-6 md:p-2 pb-6">
+                <div className="md:ml-6 ">
                   <p className="text-[rgb(22,103,161)] text-lg md:text-2xl font-semibold capitalize">
                     {item.title}
                   </p>
