@@ -73,6 +73,7 @@ const Stepper = () => {
       className="bg-[rgb(251,253,255)] text-white w-full py-10 md:px-24 px-6 "
       ref={containerRef}
     >
+      
       <div className="md:-ml-10 pb-12 md:pl-0 sm:pl-12 pl-4">
         <h1 className="font-roboto-slab text-2xl md:text-4xl md:pb-4 pb-2 text-[rgb(22,103,161)]  font-semibold">
           We Get It—It’s Tough Out There

@@ -1,36 +1,36 @@
-import React from "react";
-import Navbar from "./section/Navbar";
-import Header from "./section/Header";
-import Services from "./section/Services";
-import WhyUs from "./section/WhyUs";
-import ContactForm from "./components/ContactForm";
-import CFO from "./section/CFO";
-import Carousel from "./section/Carousel";
-import LandingPage from "./section/LandingPage";
-import Card from "./section/Card";
-import Team from "./section/Team";
-import Stepper from "./section/Stepper";
-import Testimonial from "./section/Testimonial";
-// import GsapTest from "./section/GsapTest";
+import React, { Suspense } from "react";
+
+// Lazy load components (excluding Navbar)
+const Navbar = React.lazy(() => import("./section/Navbar"));
+const Header = React.lazy(() => import("./section/Header"));
+const WhyUs = React.lazy(() => import("./section/WhyUs"));
+const ContactForm = React.lazy(() => import("./components/ContactForm"));
+const CFO = React.lazy(() => import("./section/CFO"));
+const Carousel = React.lazy(() => import("./section/Carousel"));
+const LandingPage = React.lazy(() => import("./section/LandingPage"));
+const Card = React.lazy(() => import("./section/Card"));
+const Team = React.lazy(() => import("./section/Team"));
+const Stepper = React.lazy(() => import("./section/Stepper"));
+const Testimonial = React.lazy(() => import("./section/Testimonial"));
+const Footer = React.lazy(() => import("./section/Footer"));
 
 const App = () => {
   return (
     <>
-      {/* <GsapTest/> */}
-      {/* <Navbar />/ */}
-      <LandingPage />
-      <Stepper />
-      <Card />
-      <CFO />
-      <WhyUs />
-      <Carousel />
-      <Team />
-      <Header />
-      <Testimonial />
-      <ContactForm />
-      {/* <Services /> */}
-      {/* <GsapTest/> */}
-
+      <Navbar /> {/* No lazy loading for Navbar */}
+      <Suspense>
+        <LandingPage />
+        <Stepper />
+        <Card />
+        <CFO />
+        <WhyUs />
+        <Carousel />
+        <Team />
+        <Header />
+        <Testimonial />
+        <ContactForm />
+        <Footer />
+      </Suspense>
     </>
   );
 };

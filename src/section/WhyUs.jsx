@@ -1,38 +1,38 @@
-// import React from "react";
-import tech from "../assets/No more.jpg";
-import Reducecost from "../assets/2X Clients.jpg";
-import focusOnStrategy from "../assets/Focus on Strategy.jpg";
-import doubleCients from "../assets/Cut Your Costs by.jpg";
-import DataClarity from "../assets/Custom Tech Integration.jpg";
+
 
 const WhyUs = () => {
   const Data = [
     {
-      image: doubleCients,
+      image:
+        "https://azuresqldb.blob.core.windows.net/website-data/cfo-website/whyus/Cut Your Costs by.jpg",
       title: "Cut Your Costs by ∼50%",
       description:
         "You don’t need to spend on a full in-house team. We give you the power of 150+ finance and tech experts, and you only pay for what you need. Scale up or down at your will.",
     },
     {
-      image: Reducecost,
+      image:
+        "https://azuresqldb.blob.core.windows.net/website-data/cfo-website/whyus/Custom%20Tech%20Integration.jpg",
       title: "2X Clients (& Growth)",
       description:
         "Fractional CFOs see their practice scale by 2x within 6-8 months. Imagine being free and confident to bring on more clients, knowing everything is handled.",
     },
     {
-      image: focusOnStrategy,
+      image:
+        "https://azuresqldb.blob.core.windows.net/website-data/cfo-website/whyus/Focus on Strategy.jpg",
       title: "Focus on Strategy, Not Grind",
       description:
         "Free up your (& your team’s) time to help your clients grow. We’ll handle everything from basic bookkeeping to complex financial analysis & planning.",
     },
     {
-      image: DataClarity,
+      image:
+        "https://azuresqldb.blob.core.windows.net/website-data/cfo-website/whyus/Custom Tech Integration.jpg",
       title: "Custom Tech Integration",
       description:
         "From Sage Intacct, Python, FathomHQ to QBO, NetSuite, we streamline and upgrade your existing tech stack so it works for you—not the other way around.",
     },
     {
-      image: tech,
+      image:
+        "https://azuresqldb.blob.core.windows.net/website-data/cfo-website/whyus/No more.jpg",
       title: "No More Fire Drill, Only Clarity",
       description:
         "With our proactive financial reporting and automated workflows, you’ll always have the right data, right when you need it. No scrambling.",
@@ -63,7 +63,7 @@ const WhyUs = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-52 w-full object-cover mb-4"
+                className="h-52 w-full object-cover mb-4 hover:scale-105 transform duration-300 cursor-pointer"
               />
               <h4 className="text-lg font-semibold capitalize">{item.title}</h4>
               <p className="text-gray-600 ">{item.description}</p>
@@ -77,7 +77,7 @@ const WhyUs = () => {
             <img
               src={Data[2].image}
               alt={Data[2].title}
-              className="h-64 w-full object-cover mb-4"
+              className="h-64 w-full object-cover mb-4 hover:scale-105 transform duration-300 cursor-pointer"
             />
             <h4 className="text-lg font-semibold ">{Data[2].title}</h4>
             <p className="text-gray-600">{Data[2].description}</p>
@@ -94,7 +94,7 @@ const WhyUs = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-56 w-full object-cover mb-4 "
+                className="h-56 w-full object-cover mb-4 hover:scale-105 transform duration-300 cursor-pointer"
               />
               <h4 className="text-lg font-semibold capitalize ">
                 {item.title}

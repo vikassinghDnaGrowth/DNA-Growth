@@ -18,25 +18,25 @@ export default {
         arimo: ['Arimo', 'ital'],
       },
       animation: {
-        scaleUp: 'scaleUp 1s ease forwards',
-        fadeInUp: 'fadeInUp 1s ease forwards',
-        marquee: 'marquee 15s linear infinite',
+        scaleUp: 'scaleUp 2s linear forwards ',
+        fadeInUp: 'fadeInUp 2s linear forwards',
+        scaleUp2: 'scaleUp 2s linear forwards',
       },
       keyframes: {
         scaleUp: {
-          '0%': { opacity: '0', transform: 'scale(0.5)' },
+          '0%': { opacity: '0', transform: 'scale(0)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
         fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(-80px)' },
-          '100%': { opacity: '1', transform: 'translateY(0px)' },
+          '0%': { opacity: '0', transform: 'translateX(-30vw)',},
+          '100%': { opacity: '1', transform: 'translateX(0px)' },
         },
-        marquee: {
+        scaleUp2: {
           '0%': {
-            transform: 'translateX(100%)',
+           opacity: '0.25',scale: '0',
           },
           '100%': {
-            transform: 'translateX(-100%)',
+           opacity: '1',scale: '1',
           },
         },
       },
