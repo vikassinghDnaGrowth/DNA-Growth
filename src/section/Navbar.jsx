@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 // You can import the Link component from "react-router-dom" to enable routing if necessary.
 
 const Navbar = () => {
@@ -9,7 +9,11 @@ const Navbar = () => {
     <nav className="w-full border-b-2 border-gray-200 shadow-lg px-6 py-2 flex justify-between items-center">
       {/* Logo */}
       <div className="flex items-center">
-        <img width="140" src="src/assets/DNAGrowth.png" alt="logo" />
+        <img
+          width="140"
+          src="https://azuresqldb.blob.core.windows.net/website-data/cfo-website/DNA-Logos/DNAGrowth.png"
+          alt="logo"
+        />
       </div>
 
       {/* Desktop Menu */}
@@ -47,8 +51,6 @@ const Navbar = () => {
           <li>Contact</li>
         </ul>
       </div>
-
-     
     </nav>
   );
 };
