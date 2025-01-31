@@ -1,6 +1,4 @@
-import React, { Suspense } from "react";
-
-// Lazy load components (excluding Navbar)
+import React, { Suspense, useRef } from "react";
 const Navbar = React.lazy(() => import("./section/Navbar"));
 const Header = React.lazy(() => import("./section/Header"));
 const WhyUs = React.lazy(() => import("./section/WhyUs"));
@@ -15,20 +13,49 @@ const Testimonial = React.lazy(() => import("./section/Testimonial"));
 const Footer = React.lazy(() => import("./section/Footer"));
 
 const App = () => {
+  // Create refs for each section
+  const contactRef = useRef(null);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const servicesRef = useRef(null);
+
+  // Function to scroll to a section
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <>
-      <Navbar /> {/* No lazy loading for Navbar */}
+      {/* Pass the scrollToSection function to Navbar */}
+      <Navbar
+        scrollToSection={scrollToSection}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        servicesRef={servicesRef}
+        contactRef={contactRef}
+      />
+
       <Suspense>
-        <LandingPage />
+        <div ref={homeRef}>
+          <LandingPage />
+        </div>
         <Stepper />
         <Card />
         <CFO />
-        <WhyUs />
+        <div ref={aboutRef}>
+          <WhyUs />
+        </div>
         <Carousel />
         <Team />
         <Header />
-        <Testimonial />
-        <ContactForm />
+        <div ref={servicesRef}>
+          <Testimonial />
+        </div>
+        <div ref={contactRef}>
+          <ContactForm />
+        </div>
         <Footer />
       </Suspense>
     </>

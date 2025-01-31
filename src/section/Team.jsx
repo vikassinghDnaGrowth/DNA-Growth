@@ -55,7 +55,7 @@ const TeamCard = ({ member }) => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="border-2 border-gray-700 sm:rounded-full rounded-3xl text-white flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12      hover:text-white hover:bg-[rgb(169,43,101)]   relative">
+    <div className="border-2 border-gray-700 sm:rounded-full rounded-3xl hover:text-white text-black flex flex-col items-center  py-10 w-10/12 lg:w-10/12 md:w-8/12   hover:bg-[rgb(22,103,161)] transition-all duration-700   relative">
       <div className="flex justify-center mb-4 absolute sm:static  -top-[16%] sm:-top-0  ">
         <img
           src={avatar}
@@ -64,11 +64,11 @@ const TeamCard = ({ member }) => {
         />
       </div>
       <div className="flex flex-col items-center mb-2 text-center px-2 pt-10 sm:pt-0">
-        <h1 className="text-lg mb-2 font-semibold text-customBlue">{name}</h1>
-        <p className="text-sm font-semibold  text-black">{title}</p>
+        <h1 className="text-lg mb-2 font-semibold">{name}</h1>
+        <p className="text-sm font-semibold  ">{title}</p>
       </div>
       <div className="flex justify-center p-4 w-full   ">
-        <p className="text-sm text-black">{description.substring(0, 100)}...</p>
+        <p className="text-sm ">{description.substring(0, 100)}...</p>
       </div>
       <button
         onClick={openModal}

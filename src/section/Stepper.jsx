@@ -88,7 +88,7 @@ const Stepper = () => {
             {data.map((item, index) => (
               <div
                 key={index}
-                className={`border-l-2 md:pb-8  border-[rgb(239,197,9)] flex service-item service-item-${index}`}
+                className={`border-l-2 pb-6 md:pb-8  border-[rgb(239,197,9)] flex service-item service-item-${index}`}
               >
                 {/* Circle with the step number */}
                 <div className="flex items-center text-xl font-semibold justify-center w-10 h-10 p-4 border-2 border-white text-black  bg-[rgb(239,197,9)] rounded-full transform -translate-x-[55%]">

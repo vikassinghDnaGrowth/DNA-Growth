@@ -1,6 +1,6 @@
 
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all"; // Ensure ScrollTrigger is imported here
+import { ScrollTrigger } from "gsap/all"; 
 import { useGSAP } from "@gsap/react";
 import { GiCheckMark } from "react-icons/gi";
 
@@ -68,20 +68,22 @@ const Header = () => {
         opacity: 1, // Make it fully visible
         duration: 2,
         ease: "power1.out",
+       
         scrollTrigger: {
           trigger: ".image",
           start: "top 95%", // Start the animation when the image reaches 75% from top of the viewport
           end: "top 35%", // End when the bottom of the image reaches the top of the viewport
           scrub: true,
+         
         },
       }
     );
   });
 
   return (
-    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-white  ">
+    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-white overflow-hidden"> 
       <div className="w-full lg:w-11/12 flex  md:flex-row flex-col justify-between gap-4">
-        <div className="flex flex-col justify-center p-4 md:w-5/12  w-full  ">
+        <div className="flex flex-col  justify-center  p-4 md:w-5/12  w-full  ">
           <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-semibold text-black  capitalize gap-4 lg:text-nowrap ">
             <div className="flex gap-6">
               <span className="checkmark text-2xl md:text-4xl font-bold text-[rgb(22,103,161)]">
@@ -124,7 +126,7 @@ const Header = () => {
             <img
               src={image}
               alt="HeaderImg"
-              className=" image w-[100%] h-auto  object-cover rounded-3xl  "
+              className=" image w-[100%] h-auto  object-cover rounded-3xl cursor-pointer "
             />
           </div>
         </div>

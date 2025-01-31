@@ -31,8 +31,8 @@ const LandingPage = () => {
       </video>
 
       {/* Content */}
-      <div className="w-full flex flex-col md:flex-row justify-center items-center h-full gap-4 relative z-10">
-        <div className="md:w-11/12 w-10/12 flex flex-col items-center justify-center h-full ">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center h-full  relative z-10">
+        <div className="md:w-11/12 w-10/12 flex flex-col items-center justify-center ">
           <div className="md:w-11/12">
             <header className="text-md md:text-2xl">
               <div className="text-2xl font-montserrat font-bold animate-fadeInUp">
@@ -58,7 +58,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="border-2 bg-[rgb(22,103,161)] hover:rounded-xl block px-[12px] py-[11px] text-white text-xl font-semibold mt-4 capitalize hover:bg-white hover:text-[rgb(22,103,161)] hover:scale-105 hover:transform duration-300">
+              <button className="border-2 bg-[rgb(22,103,161)] hover:rounded-xl block px-[12px] py-[11px] text-white text-xl font-semibold mt-4 capitalize hover:bg-white hover:text-[rgb(22,103,161)]  transition-all duration-1000">
                 Explore Partnership Benefits
               </button>
             </div>

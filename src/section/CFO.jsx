@@ -9,13 +9,14 @@ const CFO = () => {
     // Animating the span elements first (fade-in)
     gsap.from(".card1", {
       opacity: 0, // Start with opacity 0
+      
       x: 60, // Start with a slight upward offset
-      duration: 1,
+      duration: 2,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".card1",
-        start: "top 30%",
-        end: "top 85%",
+        end: "bottom 87%",
+
         scrub: true,
       },
     });
@@ -23,12 +24,12 @@ const CFO = () => {
     gsap.from(".card3", {
       opacity: 0,
       x: -60, // Start with horizontal offset
-      duration: 1,
+      duration: 2,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".card3",
-        start: "top 30%",
-        end: "top 85%",
+        end: "bottom 87%",
+
         scrub: true,
       },
     });
@@ -36,15 +37,14 @@ const CFO = () => {
       opacity: 0,
       scale: 0.5,
       y: 60,
-      duration: 1,
+      duration: 2,
 
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".card2",
-        start: "top 50%",
-        end: "top 75%",
+        end: "bottom 87%",
+
         scrub: true,
-        pin: true,
       },
     });
   });
@@ -54,13 +54,13 @@ const CFO = () => {
       <div className="w-full max-w-7xl  px-4">
         {/* Heading Section */}
         <div className="flex sm:justify-center justify-start items-center  pb-6">
-          <h1 className= " text-2xl sm:text-4xl font-semibold font-roboto-slab text-[rgb(22,103,161)]  text-center capitalize">
+          <h1 className=" text-2xl sm:text-4xl font-semibold font-roboto-slab text-[rgb(22,103,161)]  text-center capitalize">
             We Bring Everything to Your CFO Office
           </h1>
         </div>
 
         {/* Card Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-hidden">
           {/* Strategic CFO Support Card */}
           <div className="card1 flex flex-col border-2 border-gray-200 p-6  rounded-xl shadow-lg hover:scale-105 transform duration-300 hover:bg-[rgb(136,169,192)] hover:text-white  ">
             <div className="flex justify-start">

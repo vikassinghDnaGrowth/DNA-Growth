@@ -1,6 +1,9 @@
-
-
 import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const dummyData = [
   {
@@ -36,6 +39,38 @@ const Testimonial = () => {
       (prevIndex) => (prevIndex - 1 + dummyData.length) % dummyData.length
     );
   };
+
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".text1",
+        start: "bottom 95%",
+        end: "top 40%",
+        scrub: true,
+        deley: .5,
+        // markers: true,
+        
+      },
+    });
+    tl.fromTo(
+      ".text1",
+
+      {
+        opacity: 0,
+        y: 100,
+
+      },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+      }
+      
+    );
+  });
+
+ 
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-[rgb(251,253,255)] pb-12 pt-8  ">
@@ -83,19 +118,19 @@ const Testimonial = () => {
       {/* Right Side: Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-4 capitalize text-black">
         <div>
-          <p className="italic text-yellow-500 font-montserrat font-bold">
+          <p className="text1 italic text-yellow-500 font-montserrat font-bold">
             YOUR SUCCESS IS OUR PRIDE
           </p>
-          <h1 className="text-lg md:text-3xl font-bold text-[rgb(22,103,161)] mb-6 text-left">
+          <h1 className="text1 text-lg md:text-3xl font-bold text-[rgb(22,103,161)] mb-6 text-left">
             HEAR FROM OUR HAPPY fRAC. CFO FAMILY
           </h1>
-          <p className="text-black text-lg mb-2 font-arimo">
+          <p className="text1 text-black text-lg mb-2 font-arimo">
             A COMPLIMENTARY CALL WITH OUR SUBJECT MATTER EXPERTS TO SEE IF WE
             ARE THE RIGHT FIT.
           </p>
         </div>
         <div className="gap-4 flex flex-col">
-          <div>
+          <div className="text1">
             <h1 className="text-lg font-semibold text-[rgb(185,22,128)]">
               COMMUNICATION.
             </h1>
@@ -104,7 +139,7 @@ const Testimonial = () => {
               what we do & we’re all ears to your concerns and ideas.
             </p>
           </div>
-          <div>
+          <div className="text1">
             <h1 className="text-lg font-semibold text-[rgb(22,103,161)]">
               CUSTOMIZATION.
             </h1>
@@ -114,7 +149,7 @@ const Testimonial = () => {
               an offer.
             </p>
           </div>
-          <div>
+          <div className="text1">
             <h1 className="text-lg font-semibold text-[rgb(101,1,119)]">
               GUARANTEE.
             </h1>
