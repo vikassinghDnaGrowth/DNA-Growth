@@ -28,6 +28,7 @@ const dummyData = [
 ];
 
 const Testimonial = () => {
+  console.log("Testimonial rendered");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {

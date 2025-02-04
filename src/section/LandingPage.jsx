@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import video from "../assets/videos/Video (1).mp4";
 const LandingPage = () => {
   const videoRef = useRef(null);
 
@@ -24,10 +24,7 @@ const LandingPage = () => {
         className="absolute top-0 left-0 w-full h-full object-cover blur-[4px]"
         onError={handleVideoError}
       >
-        <source
-          src="https://azuresqldb.blob.core.windows.net/website-data/Video.mp4"
-          type="video/mp4"
-        />
+        <source src={video} type="video/mp4" loading="Lazy" />
       </video>
 
       {/* Content */}
@@ -58,7 +55,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="border-2 bg-[rgb(22,103,161)] hover:rounded-xl block px-[12px] py-[11px] text-white text-xl font-semibold mt-4 capitalize hover:bg-white hover:text-[rgb(22,103,161)]  transition-all duration-1000">
+              <button className="border-2 text-center bg-[rgb(22,103,161)] hover:rounded-xl block px-[12px] py-[11px] text-white text-xl font-semibold mt-4 capitalize hover:bg-white hover:text-[rgb(22,103,161)] transition-all duration-600  ">
                 Explore Partnership Benefits
               </button>
             </div>

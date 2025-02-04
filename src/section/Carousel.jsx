@@ -98,6 +98,7 @@ import img2 from "../assets/carousel/2.jpg";
 import img3 from "../assets/carousel/3.jpg";
 
 const Carousel = () => {
+  console.log("Carousel rendered");
   const [currentIndex, setCurrentIndex] = useState(0);
   const data = [img1, img2, img3];
 

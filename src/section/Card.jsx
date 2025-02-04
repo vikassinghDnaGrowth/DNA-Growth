@@ -1,6 +1,6 @@
-import image1 from "../assets/1_technology.jpg";
-import image2 from "../assets/new_ui_design_51.jpg";
-import image3 from "../assets/ui_icon_634.jpg";
+import image1 from "../assets/Card/1_technology-min.jpg";
+import image2 from "../assets/Card/new_ui_design_51-min.jpg";
+import image3 from "../assets/Card/ui_icon_634-min.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
@@ -8,13 +8,14 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Card = () => {
+  console.log("Card rendered");
   useGSAP(() => {
     gsap.from(".heading", {
       scrollTrigger: {
         trigger: ".heading",
         duration: 1,
-        start: "top 80%",
-        end: "top 20%",
+        start: "top 90%",
+        end: "top center",
         scrub: true,
       },
       opacity: 0,

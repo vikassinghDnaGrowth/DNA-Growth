@@ -1,49 +1,51 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
-const Navbar = ({
-  scrollToSection,
-  homeRef,
-  aboutRef,
-  servicesRef,
-  contactRef,
-}) => {
+const Navbar = ({ homeRef, aboutRef, servicesRef, contactRef }) => {
+  console.log("Navbar rendered");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // useCallback to memoize the scrollToSection function to avoid unnecessary re-renders
+  const memoizedScrollToSection = useCallback((ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, []);
+
   return (
-    <nav className="w-full border-b-2 border-gray-200 shadow-lg px-6 py-2 flex justify-between items-center fixed top-0 z-50 bg-white ">
+    <nav className="w-full border-b-2 border-gray-200 shadow-lg px-6 py-2 flex justify-between items-center fixed top-0 z-50 bg-white">
       {/* Logo */}
       <div className="flex items-center">
         <img
-          width="140"
-          src="https://azuresqldb.blob.core.windows.net/website-data/cfo-website/DNA-Logos/DNAGrowth.png"
+          className="w-[70%] h-[50%] aspect-auto"
+          src="https://azuresqldb.blob.core.windows.net/dna-website/dna-logos/DNAGrowth-min.png "
           alt="logo"
         />
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex flex-grow justify-center">
+      <div className="hidden md:flex flex-grow items-center justify-center">
         <ul className="flex gap-10 text-xl">
           <li
             className="cursor-pointer"
-            onClick={() => scrollToSection(homeRef)}
+            onClick={() => memoizedScrollToSection(homeRef)}
           >
             Home
           </li>
           <li
             className="cursor-pointer"
-            onClick={() => scrollToSection(aboutRef)}
+            onClick={() => memoizedScrollToSection(aboutRef)}
           >
             About
           </li>
           <li
             className="cursor-pointer"
-            onClick={() => scrollToSection(servicesRef)}
+            onClick={() => memoizedScrollToSection(servicesRef)}
           >
             Services
           </li>
           <li
             className="cursor-pointer"
-            onClick={() => scrollToSection(contactRef)}
+            onClick={() => memoizedScrollToSection(contactRef)}
           >
             Contact
           </li>
@@ -68,7 +70,7 @@ const Navbar = ({
           <li
             className="cursor-pointer"
             onClick={() => {
-              scrollToSection(homeRef);
+              memoizedScrollToSection(homeRef);
               setIsMobileMenuOpen(false);
             }}
           >
@@ -77,7 +79,7 @@ const Navbar = ({
           <li
             className="cursor-pointer"
             onClick={() => {
-              scrollToSection(aboutRef);
+              memoizedScrollToSection(aboutRef);
               setIsMobileMenuOpen(false);
             }}
           >
@@ -86,7 +88,7 @@ const Navbar = ({
           <li
             className="cursor-pointer"
             onClick={() => {
-              scrollToSection(servicesRef);
+              memoizedScrollToSection(servicesRef);
               setIsMobileMenuOpen(false);
             }}
           >
@@ -95,7 +97,7 @@ const Navbar = ({
           <li
             className="cursor-pointer"
             onClick={() => {
-              scrollToSection(contactRef);
+              memoizedScrollToSection(contactRef);
               setIsMobileMenuOpen(false);
             }}
           >

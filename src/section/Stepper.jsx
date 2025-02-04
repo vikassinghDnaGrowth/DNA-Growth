@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Stepper = () => {
+  console.log("Stepper rendered");
   const data = useMemo(
     () => [
       {

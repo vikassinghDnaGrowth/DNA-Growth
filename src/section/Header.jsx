@@ -9,6 +9,7 @@ import image from "../assets/DNABdays_Jan 2025 (2).png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
+  console.log("Header rendered");
   useGSAP(() => {
     // Animating the span elements first (fade-in)
     gsap.from(".checkmark", {
@@ -81,27 +82,31 @@ const Header = () => {
   });
 
   return (
-    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-white overflow-hidden"> 
+    <div className="w-full flex md:h-auto h-auto pb-24 pt-8 md:pb-6   justify-center items-center p-4 bg-white overflow-hidden">
       <div className="w-full lg:w-11/12 flex  md:flex-row flex-col justify-between gap-4">
         <div className="flex flex-col  justify-center  p-4 md:w-5/12  w-full  ">
           <div className="flex flex-col lg:relative right-[3.7rem]  font-montserrat text-xl md:4xl font-semibold text-black  capitalize gap-4 lg:text-nowrap ">
             <div className="flex gap-6">
-              <span className="checkmark text-2xl md:text-4xl font-bold text-[rgb(22,103,161)]">
+              <span className="checkmark text-2xl md:text-4xl font-bold text-green-500">
                 <GiCheckMark />
               </span>
               <h1 className="h1 text-2xl">Double your clientele</h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark text-2xl md:text-4xl font-bold  text-[rgb(22,103,161)]">
+              <span className="checkmark text-2xl md:text-4xl font-bold  text-green-500">
                 <GiCheckMark />
               </span>
-              <h1 className="h1 text-2xl">Deliver more value to your clients</h1>
+              <h1 className="h1 text-2xl">
+                Deliver more value to your clients
+              </h1>
             </div>
             <div className="flex gap-6">
-              <span className="checkmark text-2xl md:text-4xl font-bold  text-[rgb(22,103,161)]">
+              <span className="checkmark text-2xl md:text-4xl font-bold  text-green-500">
                 <GiCheckMark />
               </span>
-              <h1 className="h1  text-2xl">Free up your time for strategic work</h1>
+              <h1 className="h1  text-2xl">
+                Free up your time for strategic work
+              </h1>
             </div>
           </div>
           <p className="py-8 text-lg md:text-lg text-black discription">
