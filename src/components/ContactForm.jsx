@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import test from "../assets/bg-min.jpg";
+import test from "../assets/img.jpg";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -34,14 +34,14 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-start items-center   w-full  py-10" style={{ backgroundImage: `url(${test})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat' , }}>
-      <div className="w-full sm:w-9/12 lg:w-6/12  px-6 rounded-lg ">
-        <h1 className="text-2xl md:text-4xl text-center text-black font-bold font-roboto-slab uppercase">
+    <div className="flex justify-start items-end   w-full  py-10" style={{ backgroundImage: `url(${test})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat' , }}>
+      <div className="w-full sm:w-9/12 lg:w-6/12  px-6 rounded-lg  ">
+        <h1 className="text-2xl md:text-4xl text-center text-white font-bold font-roboto-slab uppercase">
           Get In Touch
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="shadow-lg shadow-gray-700 p-6 mt-2 rounded-lg  "
+          className=" p-6 mt-2 rounded-lg  "
         >
           {error && (
             <p className="text-red-600" aria-live="polite">
@@ -49,7 +49,7 @@ const ContactForm = () => {
             </p>
           )}
           <div className="mb-3">
-            <label className="block text-black" htmlFor="name">
+            <label className="block text-white" htmlFor="name">
               Name*
             </label>
             <input
@@ -64,7 +64,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="block text-black" htmlFor="email">
+            <label className="block text-white" htmlFor="email">
               Email*
             </label>
             <input
@@ -79,7 +79,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="block text-black" htmlFor="contactNumber">
+            <label className="block text-white" htmlFor="contactNumber">
               Contact Number
             </label>
             <input
@@ -94,7 +94,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="block text-black" htmlFor="message">
+            <label className="block text-white" htmlFor="message">
               Message
             </label>
             <textarea
