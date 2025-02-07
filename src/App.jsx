@@ -54,13 +54,14 @@ const App = () => {
         <Carousel />
         <Team />
         <Header />
-        <div ref={servicesRef}>
+        {/* <div ref={servicesRef}>
           <Testimonial />
-        </div>
+        </div> */}
         <div ref={contactRef}>
           <ContactForm />
         </div>
         <Footer />
+       
       </Suspense>
     </>
   );

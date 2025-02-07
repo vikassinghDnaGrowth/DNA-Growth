@@ -34,8 +34,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-start items-end   w-full  py-10" style={{ backgroundImage: `url(${test})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat' , }}>
-      <div className="w-full sm:w-9/12 lg:w-6/12  px-6 rounded-lg  ">
+    <div className="flex justify-start items-end   w-full  py-10 " style={{ backgroundImage: `url(${test})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat' ,  }}>
+      <div className="w-full sm:w-9/12 lg:w-6/12  px-6 rounded-lg ">
         <h1 className="text-2xl md:text-4xl text-center text-white font-bold font-roboto-slab uppercase">
           Get In Touch
         </h1>
@@ -59,7 +59,7 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className="mt-1 block w-full p-2  rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              className="mt-1 block w-full p-2  rounded-lg focus:outline-none focus:ring focus:ring-blue-300 "
               required
             />
           </div>

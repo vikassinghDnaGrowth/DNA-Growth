@@ -1,5 +1,6 @@
+import { memo } from "react";
 import logo from "../assets/DNA Logo (White).png";
-const Footer = () => {
+const Footer = memo(() => {
   console.log("Footer rendered");
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -11,7 +12,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="space-y-2 md:space-y-0 md:flex md:space-x-6">
+          <div className=" flex w-full justify-around md:flex md:justify-end md:gap-6">
             <a href="#home" className="hover:text-gray-400">
               Home
             </a>
@@ -34,6 +35,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;

@@ -46,7 +46,7 @@ const Card = () => {
       </div>
 
       {/* Card Section 1 */}
-      <div className="bg-[rgb(201,63,108)] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center  ">
+      <div className="bg-[rgb(201,63,108)] rounded-lg p-6 w-[90vw] lg:w-[65vw] max-h-[80vh] sm:max-h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center  ">
         <div className="flex-1 flex flex-col justify-center sm:items-start items-center p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center sm:text-left capitalize">
             We do the ‘grunt’ work
@@ -60,13 +60,13 @@ const Card = () => {
           <img
             src={image1}
             alt="Image 1"
-            className="md:w-full md:h-full aspect-[4/3] sm:aspect-auto  object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
+            className="md:w-full md:h-full aspect-[6/4] sm:aspect-auto  object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
           />
         </div>
       </div>
 
       {/* Card Section 2 */}
-      <div className="bg-[rgb(239,197,0)] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
+      {/* <div className="bg-[rgb(239,197,0)] rounded-lg p-6 w-[90vw] lg:w-[65vw] max-h-[80vh] sm:max-h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center ">
         <div className="flex-1 flex flex-col justify-center sm:items-start items-center p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We work under your brand name
@@ -80,13 +80,31 @@ const Card = () => {
           <img
             src={image2}
             alt="Image 2"
-            className="md:w-full md:h-full aspect-[4/3] sm:aspect-auto object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
+            className="md:w-full md:h-full aspect-[6/3] sm:aspect-auto object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
+          />
+        </div>
+      </div> */}
+      <div className="bg-[rgb(239,197,0)] rounded-lg p-6 w-[90vw] lg:w-[65vw] max-h-[80vh] sm:max-h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center ">
+        <div className="flex-1 flex flex-col justify-center sm:items-start items-center p-4 gap-6">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
+            We work under your brand name
+          </h1>
+          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-white">
+            Our white-label services mean we’re invisible to your clients (as
+            long as you wish), but the impact we make? That’s loud & clear.
+          </p>
+        </div>
+        <div className="flex-1 flex justify-center items-center">
+          <img
+            src={image2}
+            alt="Image 3"
+            className="md:w-full md:h-full aspect-[6/4] sm:aspect-auto object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
           />
         </div>
       </div>
 
       {/* Card Section 3 */}
-      <div className="bg-[rgb(61,145,207)] rounded-lg p-6 w-[90vw] lg:w-[65vw] h-[80vh] sm:h-[60vh]  sticky top-10 flex flex-col sm:flex-row justify-center">
+      <div className="bg-[rgb(61,145,207)] rounded-lg p-6 w-[90vw] lg:w-[65vw] max-h-[80vh] sm:max-h-[60vh] sticky top-10 flex flex-col sm:flex-row justify-center ">
         <div className="flex-1 flex flex-col justify-center sm:items-start items-center p-4 gap-6">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We plug into your tech stack
@@ -100,7 +118,7 @@ const Card = () => {
           <img
             src={image3}
             alt="Image 3"
-            className="md:w-full md:h-full aspect-[4/3] sm:aspect-auto object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
+            className="md:w-full md:h-full aspect-[6/4] sm:aspect-auto object-cover rounded-lg" // Ensures the image fills the container while maintaining aspect ratio
           />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import image1 from "../assets/why-us/Cut Your Costs by-min.jpg";
-import image2 from "../assets/why-us/Custom Tech Integration-min.jpg";
+import image2 from "../assets/why-us/2X Clients-min.jpg";
 import image3 from "../assets/why-us/Focus on Strategy-min.jpg";
 import image4 from "../assets/why-us/Custom Tech Integration-min.jpg";
 import image5 from "../assets/why-us/No more-min.jpg";
@@ -91,7 +91,7 @@ const Card = ({ image, title, description, large = false }) => {
       <img
         src={image}
         alt={title}
-        className="h-52 w-full object-cover mb-4 hover:scale-105 transition-all duration-1000 cursor-pointer"
+        className="h-48  w-full  object-cover mb-4 hover:scale-105 transition-all duration-1000 cursor-pointer"
         loading="lazy"
         width={300}
         height={200}

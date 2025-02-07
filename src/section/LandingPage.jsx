@@ -28,7 +28,7 @@ const LandingPage = () => {
       </video>
 
       {/* Content */}
-      <div className="w-full flex flex-col md:flex-row justify-center items-center h-full  relative z-10">
+      <div className="w-full flex flex-col md:pt-8 justify-center items-center h-full  relative z-10">
         <div className="md:w-11/12 w-10/12 flex flex-col items-center justify-center ">
           <div className="md:w-11/12">
             <header className="text-md md:text-2xl">
@@ -46,7 +46,7 @@ const LandingPage = () => {
               </h1>
             </header>
             <div className="text-white">
-              <p className="py-2 md:text-lg text-md font-montserrat capitalize animate-scaleUp">
+              <p className="py-2 sm:text-lg text-md font-montserrat capitalize animate-scaleUp">
                 Drowning in financial reports and spreadsheets? Imagine
                 offloading accounting, bookkeeping, modeling, and daily
                 operations without a big team. DNA Growth helps fractional CFOs
@@ -55,7 +55,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className="border-2 text-center bg-[rgb(22,103,161)] hover:rounded-xl block px-[12px] py-[11px] text-white text-xl font-semibold mt-4 capitalize hover:bg-white hover:text-[rgb(22,103,161)] transition-all duration-600  ">
+              <button className="border-2 text-center bg-[rgb(22,103,161)] hover:rounded-xl block px-[12px] py-[11px] text-white text-xl font-semibold mt-4 capitalize hover:bg-white hover:text-[rgb(22,103,161)] transition-all duration-700  ">
                 Explore Partnership Benefits
               </button>
             </div>
