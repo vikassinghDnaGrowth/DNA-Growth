@@ -12,7 +12,7 @@ const Navbar = ({ homeRef, aboutRef, servicesRef, contactRef }) => {
   }, []);
 
   return (
-    <nav className="w-full border-b-2 border-gray-200 shadow-lg px-6 py-2 flex justify-between items-center  bg-white">
+    <nav className="w-full border-b-2 border-gray-200 shadow-lg px-6 py-2 flex justify-between items-center sticky top-1 z-50  bg-white">
       {/* Logo */}
       <div className="flex items-center">
         <img

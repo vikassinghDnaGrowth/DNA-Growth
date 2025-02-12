@@ -55,6 +55,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="name"
+
               id="name"
               value={formData.name}
               onChange={handleChange}
@@ -110,7 +111,7 @@ const ContactForm = () => {
           <div className="flex justify-center items-center">
             <button
               type="submit"
-              className="bg-white text-black text-lg py-2 px-12 rounded-xl hover:bg-yellow-400 hover:text-white transition duration-200"
+              className="bg-white text-black text-lg mt-2 py-2 px-12 rounded-xl hover:bg-yellow-400 hover:text-white transition duration-200"
               disabled={loading}
             >
               {loading ? "Submitting..." : "Submit"}

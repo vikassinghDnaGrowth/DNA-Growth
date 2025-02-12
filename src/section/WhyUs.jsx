@@ -91,7 +91,7 @@ const Card = ({ image, title, description, large = false }) => {
       <img
         src={image}
         alt={title}
-        className="h-48  w-full  object-cover mb-4 hover:scale-105 transition-all duration-1000 cursor-pointer"
+        className="h-48 sm:h-full  w-full  object-cover mb-4 hover:scale-105 transition-all duration-1000 cursor-pointer"
         loading="lazy"
         width={300}
         height={200}
