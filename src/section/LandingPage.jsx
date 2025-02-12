@@ -21,7 +21,7 @@ const LandingPage = () => {
         ref={videoRef}
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover blur-[4px]"
+        className="absolute top-0 left-0 sm:w-full h-screen w-screen sm:h-full object-cover blur-[4px]"
         onError={handleVideoError}
       >
         <source src={video} type="video/mp4" loading="Lazy" />
