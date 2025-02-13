@@ -1,5 +1,6 @@
 // App.jsx
 import React, { Suspense, useRef, useCallback } from "react";
+import LandingpageShimmer from "./components/LandingpageShimmer";
 
 // Lazy load other sections
 const Header = React.lazy(() => import("./section/Header"));
@@ -40,7 +41,7 @@ const App = () => {
         servicesRef={servicesRef}
         contactRef={contactRef}
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div><LandingpageShimmer/></div>}>
         {/* Sections of your page */}
         <div ref={homeRef}>
           <LandingPage />
@@ -54,14 +55,13 @@ const App = () => {
         <Carousel />
         <Team />
         <Header />
-        {/* <div ref={servicesRef}>
+        <div ref={servicesRef}>
           <Testimonial />
-        </div> */}
+        </div>
         <div ref={contactRef}>
           <ContactForm />
         </div>
         <Footer />
-       
       </Suspense>
     </>
   );
