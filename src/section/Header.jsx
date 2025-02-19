@@ -8,7 +8,7 @@ import image from "../assets/DNABdays_Jan 2025 (2).png";
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
-const Header = () => {
+const Header = ({ scrollToSection, contactRef }) => {
   console.log("Header rendered");
   useGSAP(() => {
     // Animating the span elements first (fade-in)
@@ -69,13 +69,12 @@ const Header = () => {
         opacity: 1, // Make it fully visible
         duration: 2,
         ease: "power1.out",
-       
+
         scrollTrigger: {
           trigger: ".image",
           start: "top 95%", // Start the animation when the image reaches 75% from top of the viewport
           end: "top 35%", // End when the bottom of the image reaches the top of the viewport
           scrub: true,
-         
         },
       }
     );
@@ -118,7 +117,10 @@ const Header = () => {
             CFOs who want to build value for their clients without compromising
             success or their valuable hours spent on mundane tasks.
           </p>
-          <button className="  w-full rounded-xl text-nowrap  px-[8px] py-[11px] bg-[rgb(22,103,161)] text-white  text-xl font-semibold  ">
+          <button
+            className="  w-full rounded-xl text-nowrap  px-[8px] py-[11px] bg-[rgb(22,103,161)] text-white  text-xl font-semibold  "
+            onClick={() => scrollToSection(contactRef)}
+          >
             Explore Our Services
           </button>
           {/* //{" "}

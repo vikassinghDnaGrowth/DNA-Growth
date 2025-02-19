@@ -41,12 +41,21 @@ const App = () => {
         servicesRef={servicesRef}
         contactRef={contactRef}
       />
-      <Suspense fallback={<div><LandingpageShimmer/></div>}>
+      <Suspense
+        fallback={
+          <div>
+            <LandingpageShimmer />
+          </div>
+        }
+      >
         {/* Sections of your page */}
         <div ref={homeRef}>
-          <LandingPage />
+          <LandingPage
+            scrollToSection={scrollToSection}
+            contactRef={contactRef}
+          />
         </div>
-        <Stepper />
+        <Stepper scrollToSection={scrollToSection} contactRef={contactRef} />
         <Card />
         <CFO />
         <div ref={aboutRef}>
@@ -54,14 +63,12 @@ const App = () => {
         </div>
         <Carousel />
         <Team />
-        <Header />
-        <div ref={servicesRef}>
-          <Testimonial />
-        </div>
+        <Header scrollToSection={scrollToSection} contactRef={contactRef} />
+        <Testimonial />
         <div ref={contactRef}>
           <ContactForm />
         </div>
-        <Footer />
+        <Footer scrollToSection={scrollToSection} contactRef={contactRef}  />
       </Suspense>
     </>
   );
