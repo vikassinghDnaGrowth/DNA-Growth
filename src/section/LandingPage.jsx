@@ -1,6 +1,6 @@
 // LandingPage.jsx
 import { useEffect, useRef } from "react";
-import video from "../assets/videos/Video (1).mp4";
+import video from "../assets/videos/Video new.mp4";
 
 const LandingPage = ({ scrollToSection, contactRef }) => {
   const videoRef = useRef(null);

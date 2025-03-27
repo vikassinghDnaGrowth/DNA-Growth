@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from "react";
-import avatar from "../assets/avtar.avif";
-import anuj from "../assets/team/anuj bhushan.jpg";
-import gurvinder from "../assets/team/Gurvinder Singh-2024.jpg";
+// import avatar from "../assets/avtar.avif";
+import anuj from "../assets/team/anuj_bhushan-removebg-preview.png";
+import gurvinder from "../assets/team/Gurvinder_Singh-2024-removebg-preview.png";
 import ip from "../assets/team/IP Image.png";
 import React from "react";
 
@@ -45,7 +45,8 @@ Her expertise lies in Financial Data Management, Strategic Budgeting & Forecasti
     description: `Anuj Bhushan is a seasoned finance professional with 11 years of experience in financial modeling, corporate strategy, and project management. As Manager of Finance at DNA Growth, he leads a team that delivers financial due diligence, models, and budgets for clients across various industries, including tech, pharma, and manufacturing.
 
 Anuj's previous roles included strategic advisory and financial management at PricewaterhouseCoopers and ICRA Analytics, where he provided regulatory and policy advisory to state utilities and public sector units. He holds an MBA in Finance from Xavier Institute of Management Bhubaneswar and a B.Tech in Electrical & Electronics Engineering from Kalinga Institute of Industrial Technology. Anuj combines technical expertise with solid business acumen to drive well-planned and strategic initiatives.`,
-    image: anuj,
+    image:
+     anuj,
   },
 ];
 
