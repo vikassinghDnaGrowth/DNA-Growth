@@ -8,7 +8,7 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Card = () => {
-  console.log("Card rendered");
+
   useGSAP(() => {
     gsap.from(".heading", {
       scrollTrigger: {

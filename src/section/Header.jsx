@@ -9,7 +9,7 @@ import image from "../assets/DNABdays_Jan 2025 (2).png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = ({ scrollToSection, contactRef }) => {
-  console.log("Header rendered");
+
   useGSAP(() => {
     // Animating the span elements first (fade-in)
     gsap.from(".checkmark", {

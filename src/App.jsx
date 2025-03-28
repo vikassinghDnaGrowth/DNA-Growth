@@ -17,7 +17,7 @@ const Navbar = React.lazy(() => import("./section/Navbar"));
 const Testimonial = React.lazy(() => import("./section/Testimonial"));
 
 const App = () => {
-  console.log("App rendered");
+ 
 
   // Create refs for each section
   const contactRef = useRef(null);

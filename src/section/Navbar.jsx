@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 
 const Navbar = ({ homeRef, aboutRef, servicesRef, contactRef }) => {
-  console.log("Navbar rendered");
+  
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // useCallback to memoize the scrollToSection function to avoid unnecessary re-renders

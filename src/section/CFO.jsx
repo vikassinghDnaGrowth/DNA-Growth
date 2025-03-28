@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 const CFO = () => {
-  console.log("CFO rendered");
+
   useGSAP(() => {
     // Animating the span elements first (fade-in)
     gsap.from(".card1", {
