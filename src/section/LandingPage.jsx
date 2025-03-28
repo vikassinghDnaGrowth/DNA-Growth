@@ -1,6 +1,6 @@
 // LandingPage.jsx
 import { useEffect, useRef } from "react";
-import video from "../assets/videos/Video new.mp4";
+import video from "../assets/videos/Video.mp4";
 
 const LandingPage = ({ scrollToSection, contactRef }) => {
   const videoRef = useRef(null);
@@ -16,7 +16,7 @@ const LandingPage = ({ scrollToSection, contactRef }) => {
   };
 
   return (
-    <div className="w-full bg-white lg:h-screen min-h-screen md:pb-10 text-white relative overflow-hidden h-[80vh]">
+    <div className="w-full bg-white min-h-screen  md:pb-10 text-white relative overflow-hidden h-[80vh]">
       {/* Background Video */}
       <video
         autoPlay
@@ -48,7 +48,7 @@ const LandingPage = ({ scrollToSection, contactRef }) => {
               </h1>
             </header>
             <div className="text-white">
-              <p className="py-2 sm:text-md xl:text-lg text-sm font-montserrat capitalize animate-scaleUp text-center md:text-start">
+              <p className="py-2 sm:text-md xl:text-lg text-sm font-montserrat  animate-scaleUp text-center md:text-start">
                 Drowning in financial reports and spreadsheets? Imagine
                 offloading accounting, bookkeeping, modeling, and daily
                 operations without a big team. DNA Growth helps fractional CFOs

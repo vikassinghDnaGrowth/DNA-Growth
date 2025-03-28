@@ -31,7 +31,7 @@ const Card = () => {
           DNA Growth Has Your Back (and Your Brand’s)
         </h1>
         <p className="text-base sm:text-lg lg:text-xl   text-black pt-2 sm:px-10">
-          <span className="text-lg sm:text-xl text-black sm:font-bold font-semibold ">
+          <span className="text-lg sm:text-xl text-blue-800 sm:font-bold font-semibold ">
             Our White-Label CFO Support Has One Goal:{" "}
           </span>
           To make you one-stop support for your clients & build better business
@@ -51,7 +51,7 @@ const Card = () => {
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-white font-roboto-slab text-center sm:text-left capitalize">
             We do the ‘grunt’ work
           </h1>
-          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-white">
+          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl  text-white">
             Get daily bookkeeping, financial reporting, and cash flow management
             for all clients without you needing to micromanage.
           </p>
@@ -70,7 +70,7 @@ const Card = () => {
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We work under your brand name
           </h1>
-          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-white">
+          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl  text-white">
             Our white-label services mean we’re invisible to your clients (as
             long as you wish), but the impact we make? That’s loud & clear.
           </p>
@@ -90,7 +90,7 @@ const Card = () => {
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold font-roboto-slab text-center sm:text-left text-white capitalize">
             We plug into your tech stack
           </h1>
-          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl capitalize text-white">
+          <p className="text-center sm:text-left text-sm sm:text-lg lg:text-xl  text-white">
             Whether it’s Sage Intacct, NetSuite, PowerBI, QBO, or a custom-built
             system—we integrate with what you’re already using.
           </p>
