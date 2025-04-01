@@ -36,7 +36,7 @@ Her expertise lies in Financial Data Management, Strategic Budgeting & Forecasti
   },
   {
     name: "Divya Arumugasamy",
-    title: "Sr. Manager – Research & Analytics",
+    title: "Sr. Manager – R A",
     description: `Divya brings over X years of specialized experience in market research, business intelligence, and strategic analysis across multiple sectors including fintech, healthcare, and consumer tech. At DNA Growth, she leads the Research & Analytics vertical, driving data-backed strategy development, competitive analysis, and primary/secondary research for clients across geographies. Divya excels at transforming complex datasets into actionable insights that support strategic planning, investor presentations, and go-to-market decisions. Prior to DNA Growth, she worked with top consulting firms, delivering high-impact research and analytics support to global strategy teams and C-suite executives.`,
     image: divya,
   },
