@@ -3,6 +3,7 @@ import { useState, useCallback, useMemo } from "react";
 import anuj from "../assets/team/anuj_bhushan-removebg-preview.png";
 import gurvinder from "../assets/team/Gurvinder_Singh-2024-removebg-preview.png";
 import ip from "../assets/team/IP Image.png";
+import divya from "../assets/team/Divya.jpeg"
 import React from "react";
 
 // Data for team members
@@ -33,6 +34,14 @@ of Business.`,
 Her expertise lies in Financial Data Management, Strategic Budgeting & Forecasting, and Analytics to guide business decisions and ensure financial well-being. Previously, she worked for Deloitte and Thomson Reuters, specializing in revenue and pipeline analysis, performance management reporting, and sales review analysis for the Middle East.`,
     image: ip,
   },
+  {
+    name: "Divya Arumugasamy",
+    title: "Sr. Manager – Research & Analytics",
+    description: `Divya brings over X years of specialized experience in market research, business intelligence, and strategic analysis across multiple sectors including fintech, healthcare, and consumer tech. At DNA Growth, she leads the Research & Analytics vertical, driving data-backed strategy development, competitive analysis, and primary/secondary research for clients across geographies. Divya excels at transforming complex datasets into actionable insights that support strategic planning, investor presentations, and go-to-market decisions. Prior to DNA Growth, she worked with top consulting firms, delivering high-impact research and analytics support to global strategy teams and C-suite executives.`,
+    image: divya,
+  },
+
+
   {
     name: "Gurvinder Singh",
     title: "FP&A Head",
@@ -124,7 +133,7 @@ const Team = () => {
             Meet Our Team
           </h1>
         </div>
-        <div className="w-full sm:w-8/12 gap-20 sm:gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-transparent justify-items-center">
+        <div className="w-full sm:w-10/12 gap-20 sm:gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 bg-transparent justify-items-center">
           {teamMembers.map((member, index) => (
             <TeamCard key={member.name} member={member} />
           ))}
